@@ -44,8 +44,16 @@
   "image": "https://www.prymcarehealth.com/assets/logo.jpg",
   "logo": "https://www.prymcarehealth.com/assets/logo.jpg",
   "url": "https://www.prymcarehealth.com/",
-  "telephone": "+233-000-000-000",
+  "telephone": "+233 54 400 3712",
   "priceRange": "₵₵",
+  "currenciesAccepted": "GHS",
+  "paymentAccepted": "Cash, Mobile Money, Bank Transfer",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "08:00",
+    "closes": "20:00"
+  },
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Accra",
@@ -90,6 +98,34 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Forever Daily","category":"Nutritional Supplement","brand":"Forever Living Products","offers":{"@type":"Offer","priceCurrency":"GHS","price":"284.00","availability":"https://schema.org/InStock"}}},
+    {"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Forever Aloe Propolis Creme","category":"Skin Care","brand":"Forever Living Products","offers":{"@type":"Offer","priceCurrency":"GHS","price":"87.00","availability":"https://schema.org/InStock"}}},
+    {"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Forever Bee Pollen","category":"Energy & Vitality","brand":"Forever Living Products","offers":{"@type":"Offer","priceCurrency":"GHS","price":"67.00","availability":"https://schema.org/InStock"}}},
+    {"@type":"ListItem","position":4,"item":{"@type":"Product","name":"Forever CardioHealth","category":"Cardio Health","brand":"Forever Living Products","offers":{"@type":"Offer","priceCurrency":"GHS","price":"429.00","availability":"https://schema.org/InStock"}}},
+    {"@type":"ListItem","position":5,"item":{"@type":"Product","name":"Forever Lite Ultra Shake","category":"Weight Management","brand":"Forever Living Products","offers":{"@type":"Offer","priceCurrency":"GHS","price":"349.00","availability":"https://schema.org/InStock"}}},
+    {"@type":"ListItem","position":6,"item":{"@type":"Product","name":"Forever Royal Jelly","category":"Bee Hive Products","brand":"Forever Living Products","offers":{"@type":"Offer","priceCurrency":"GHS","price":"198.00","availability":"https://schema.org/InStock"}}},
+    {"@type":"ListItem","position":7,"item":{"@type":"Product","name":"Forever Freedom","category":"Bone & Joint Care","brand":"Forever Living Products","offers":{"@type":"Offer","priceCurrency":"GHS","price":"312.00","availability":"https://schema.org/InStock"}}},
+    {"@type":"ListItem","position":8,"item":{"@type":"Product","name":"Forever Aloe Vera Gelly","category":"Personal Care","brand":"Forever Living Products","offers":{"@type":"Offer","priceCurrency":"GHS","price":"96.00","availability":"https://schema.org/InStock"}}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://www.prymcarehealth.com/"},
+    {"@type":"ListItem","position":2,"name":"Products","item":"https://www.prymcarehealth.com/#products"},
+    {"@type":"ListItem","position":3,"name":"Become a Partner","item":"https://www.prymcarehealth.com/#partner"},
+    {"@type":"ListItem","position":4,"name":"Contact","item":"https://www.prymcarehealth.com/#contact"}
+  ]
+}
+</script>
 
 <style>
 /* ============ TOKENS ============ */
@@ -122,7 +158,10 @@ html{scroll-behavior:smooth;}
 body{
   margin:0;
   font-family:var(--ff-body);
-  background:var(--linen);
+  background-color:var(--linen);
+  background-image:
+    radial-gradient(rgba(14,61,40,0.05) 1px, transparent 1.4px);
+  background-size: 4px 4px;
   color:var(--ink);
   line-height:1.6;
   -webkit-font-smoothing:antialiased;
@@ -260,7 +299,9 @@ nav.primary a:hover::after{width:100%;}
 .hero-art{position:relative; display:flex; align-items:center; justify-content:center; min-height:340px;}
 .blob{
   position:absolute; inset:0; margin:auto; width:min(430px,90%); aspect-ratio:1;
-  background:linear-gradient(150deg,var(--aloe) 0%, var(--canopy) 100%);
+  background:
+    linear-gradient(150deg, rgba(14,61,40,0.72) 0%, rgba(47,143,82,0.62) 100%),
+    url('assets/hero-bg.jpg') center/cover;
   border-radius:63% 37% 54% 46% / 45% 41% 59% 55%;
   animation:morph 12s ease-in-out infinite;
   box-shadow:var(--shadow);
@@ -309,7 +350,13 @@ nav.primary a:hover::after{width:100%;}
   display:flex; align-items:center; justify-content:center;
 }
 .about-visual .center-logo{width:44%; border-radius:50%; box-shadow:0 30px 60px -25px rgba(14,61,40,0.4); border:8px solid #fff;}
-.about-visual .leaf-deco{position:absolute; opacity:0.18; color:var(--aloe);}
+.about-visual .leaf-deco{position:absolute; opacity:0.18; color:var(--aloe); z-index:1;}
+.about-visual .about-photo{width:100%; height:100%; object-fit:cover; position:relative; z-index:0;}
+.about-visual .logo-badge{
+  position:absolute; top:18px; right:18px; width:64px; height:64px; border-radius:50%;
+  overflow:hidden; border:4px solid #fff; box-shadow:0 14px 30px -14px rgba(14,61,40,0.5); z-index:2; background:#fff;
+}
+.about-visual .logo-badge img{width:100%; height:100%; object-fit:cover;}
 .stat-card{
   position:absolute; bottom:18px; left:18px; background:#fff; border-radius:16px; padding:16px 20px;
   box-shadow:0 20px 40px -20px rgba(14,61,40,0.4); border:1px solid var(--line);
@@ -329,7 +376,7 @@ nav.primary a:hover::after{width:100%;}
 @media(min-width:720px){ .cat-grid{grid-template-columns:repeat(3,1fr);} }
 @media(min-width:1100px){ .cat-grid{grid-template-columns:repeat(4,1fr);} }
 .cat-card{
-  background:#fff; border-radius:18px; padding:26px 22px; border:1px solid var(--line);
+  background:#fff; border-radius:26px 14px 26px 14px; padding:26px 22px; border:1px solid var(--line);
   transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;
 }
 .cat-card:hover{transform:translateY(-6px); box-shadow:var(--shadow); border-color:transparent;}
@@ -347,15 +394,24 @@ nav.primary a:hover::after{width:100%;}
 @media(min-width:680px){ .prod-grid{grid-template-columns:repeat(2,1fr);} }
 @media(min-width:1080px){ .prod-grid{grid-template-columns:repeat(4,1fr);} }
 .prod-card{
-  border:1px solid var(--line); border-radius:20px; overflow:hidden; background:var(--linen);
+  border:1px solid var(--line); border-radius:28px 14px 28px 14px; overflow:hidden; background:var(--linen);
   display:flex; flex-direction:column; transition:transform .3s ease, box-shadow .3s ease;
 }
 .prod-card:hover{transform:translateY(-6px); box-shadow:var(--shadow);}
 .prod-media{
   aspect-ratio:1; background:linear-gradient(150deg,var(--linen-2),#fff); display:flex; align-items:center; justify-content:center;
-  position:relative;
+  position:relative; overflow:hidden;
 }
 .prod-media svg{width:56%; height:56%; color:var(--aloe); opacity:0.85;}
+.prod-media img{width:100%; height:100%; object-fit:cover; transition:transform .5s ease;}
+.prod-card:hover .prod-media img{transform:scale(1.06);}
+.prod-watermark{
+  position:absolute; right:10px; bottom:10px; width:15%; min-width:34px; max-width:56px;
+  aspect-ratio:1; border-radius:50%; overflow:hidden; z-index:2;
+  box-shadow:0 4px 14px -4px rgba(0,0,0,0.45); opacity:0.92;
+  background:rgba(255,255,255,0.9);
+}
+.prod-watermark img{width:100%; height:100%; object-fit:cover;}
 .prod-tag{position:absolute; top:12px; left:12px; background:var(--honey); color:var(--canopy-2); font-size:10.5px; font-weight:800; padding:5px 10px; border-radius:100px; letter-spacing:0.04em; text-transform:uppercase;}
 .prod-body{padding:18px 18px 22px; display:flex; flex-direction:column; gap:10px; flex:1;}
 .prod-cat{font-size:11px; font-weight:700; color:var(--aloe); text-transform:uppercase; letter-spacing:0.06em;}
@@ -366,6 +422,18 @@ nav.primary a:hover::after{width:100%;}
 .prod-link{font-size:13px; font-weight:800; color:var(--canopy); text-decoration:none; display:flex; align-items:center; gap:4px;}
 .prod-link:hover{text-decoration:underline;}
 .products-cta{text-align:center; margin-top:48px;}
+
+/* ============ LIFESTYLE BANNER ============ */
+.lifestyle{padding:0;}
+.lifestyle-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:4px;}
+@media(min-width:720px){ .lifestyle-grid{grid-template-columns:repeat(4,1fr);} }
+.lifestyle-grid figure{margin:0; position:relative; aspect-ratio:1; overflow:hidden;}
+.lifestyle-grid img{width:100%; height:100%; object-fit:cover; transition:transform .5s ease; filter:saturate(1.05);}
+.lifestyle-grid figure:hover img{transform:scale(1.08);}
+.lifestyle-grid figcaption{
+  position:absolute; inset:auto 0 0 0; padding:14px 16px; font-size:12.5px; font-weight:700; color:#fff;
+  background:linear-gradient(0deg, rgba(10,46,30,0.85), transparent);
+}
 
 /* ============ JOURNEY ============ */
 .journey{background:var(--canopy); color:#fff; position:relative; overflow:hidden;}
@@ -384,7 +452,7 @@ nav.primary a:hover::after{width:100%;}
 .testimonials{background:var(--linen);}
 .t-grid{display:grid; grid-template-columns:1fr; gap:22px;}
 @media(min-width:820px){ .t-grid{grid-template-columns:repeat(3,1fr);} }
-.t-card{background:#fff; border:1px solid var(--line); border-radius:20px; padding:28px 24px; display:flex; flex-direction:column; gap:16px;}
+.t-card{background:#fff; border:1px solid var(--line); border-radius:24px 6px 24px 6px; padding:28px 24px; display:flex; flex-direction:column; gap:16px;}
 .t-stars{display:flex; gap:3px; color:var(--honey);}
 .t-stars svg{width:16px; height:16px;}
 .t-card p.quote{font-size:15px; color:var(--ink); line-height:1.65;}
@@ -396,10 +464,12 @@ nav.primary a:hover::after{width:100%;}
 .blog{background:#fff;}
 .blog-grid{display:grid; grid-template-columns:1fr; gap:24px;}
 @media(min-width:780px){ .blog-grid{grid-template-columns:repeat(3,1fr);} }
-.blog-card{border:1px solid var(--line); border-radius:20px; overflow:hidden; transition:transform .3s ease, box-shadow .3s ease;}
+.blog-card{border:1px solid var(--line); border-radius:28px 8px 28px 8px; overflow:hidden; transition:transform .3s ease, box-shadow .3s ease;}
 .blog-card:hover{transform:translateY(-6px); box-shadow:var(--shadow);}
-.blog-media{aspect-ratio:16/10; background:linear-gradient(150deg,var(--sprout),var(--aloe)); display:flex; align-items:center; justify-content:center;}
+.blog-media{aspect-ratio:16/10; background:linear-gradient(150deg,var(--sprout),var(--aloe)); display:flex; align-items:center; justify-content:center; overflow:hidden; position:relative;}
 .blog-media svg{width:38%; height:38%; color:rgba(255,255,255,0.9);}
+.blog-media img{width:100%; height:100%; object-fit:cover; transition:transform .5s ease;}
+.blog-card:hover .blog-media img{transform:scale(1.06);}
 .blog-body{padding:20px 20px 24px;}
 .blog-cat{font-size:11px; font-weight:800; color:var(--honey-dark); text-transform:uppercase; letter-spacing:0.06em;}
 .blog-body h3{font-size:17px; margin-top:10px; line-height:1.35;}
@@ -552,7 +622,7 @@ footer a:hover{color:#fff;}
 <header class="site">
   <div class="nav-wrap">
     <a href="#main" class="brand">
-      <img src="assets/logo.jpg" alt="PrymCare Health logo">
+      <img src="assets/logo.jpg" alt="PrymCare Health logo" width="150" height="150" fetchpriority="high">
       <span class="brand-name">PrymCare<span>Health &amp; Wellness</span></span>
     </a>
     <nav class="primary" aria-label="Primary">
@@ -566,7 +636,7 @@ footer a:hover{color:#fff;}
     </nav>
     <div class="nav-cta">
       <a href="#contact" class="btn btn-ghost" style="padding:12px 20px;">Contact Us</a>
-      <a href="https://wa.me/233000000000" class="btn btn-primary" style="padding:12px 22px;" target="_blank" rel="noopener">Shop on WhatsApp</a>
+      <a href="https://wa.me/233544003712" class="btn btn-primary" style="padding:12px 22px;" target="_blank" rel="noopener">Shop on WhatsApp</a>
     </div>
     <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
       <span></span>
@@ -580,7 +650,7 @@ footer a:hover{color:#fff;}
     <a href="#blog">Wellness Library</a>
     <a href="#partner">Become a Partner</a>
     <a href="#contact">Contact</a>
-    <a href="https://wa.me/233000000000" class="btn btn-primary" target="_blank" rel="noopener">Shop on WhatsApp</a>
+    <a href="https://wa.me/233544003712" class="btn btn-primary" target="_blank" rel="noopener">Shop on WhatsApp</a>
   </div>
 </header>
 
@@ -595,7 +665,7 @@ footer a:hover{color:#fff;}
         <p class="lead">PrymCare Health brings you FDA-approved, aloe vera-rooted supplements, weight management and skin care products — backed by real, personal guidance from a partner who cares about your results, not just your order.</p>
         <div class="hero-ctas">
           <a href="#products" class="btn btn-primary">Explore Products</a>
-          <a href="https://wa.me/233000000000" class="btn btn-honey" target="_blank" rel="noopener">Chat With Us on WhatsApp</a>
+          <a href="https://wa.me/233544003712" class="btn btn-honey" target="_blank" rel="noopener">Chat With Us on WhatsApp</a>
         </div>
         <div class="trust-row">
           <span class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>FDA (Ghana) Cleared</span>
@@ -633,7 +703,8 @@ footer a:hover{color:#fff;}
     <div class="container about-grid">
       <div class="about-visual reveal">
         <svg class="leaf-deco" style="top:-20px; right:-30px; width:180px; height:180px;" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C7 2 3 6 3 12c0 5 4 9 9 9 1-5 1-9 1-9s4 0 9-1c0-5-4-9-9-9z"/></svg>
-        <img class="center-logo" src="assets/logo.jpg" alt="PrymCare Health logo, framed">
+        <img class="about-photo" src="assets/about-photo.jpg" alt="Fresh aloe vera leaves and natural wellness ingredients" loading="lazy">
+        <div class="logo-badge"><img src="assets/logo.jpg" alt="PrymCare Health logo"></div>
         <div class="stat-card">
           <div class="num">10,000+</div>
           <div class="lbl">Customers Supported</div>
@@ -720,55 +791,105 @@ footer a:hover{color:#fff;}
     <div class="container">
       <div class="section-head reveal">
         <span class="eyebrow">Customer favourites</span>
-        <h2>Our most-loved products this month.</h2>
-        <p>A snapshot of the range — every item is aloe vera–rooted, lab-verified and personally recommended.</p>
+        <h2>Genuine Forever Living products, our most-loved this month.</h2>
+        <p>A snapshot of the range — every item is a genuine Forever Living product, aloe vera–rooted, lab-verified and personally recommended.</p>
       </div>
       <div class="prod-grid">
 
         <div class="prod-card reveal">
-          <div class="prod-media"><span class="prod-tag">Bestseller</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3c3 4 7 8 7 12a7 7 0 01-14 0c0-4 4-8 7-12z"/></svg></div>
+          <div class="prod-media"><span class="prod-tag">Bestseller</span><img src="assets/products/forever-daily.jpg" alt="Forever Daily multivitamin supplement" loading="lazy"><span class="prod-watermark"><img src="assets/logo.jpg" alt="" aria-hidden="true"></span></div>
           <div class="prod-body">
             <span class="prod-cat">Nutritional Supplement</span>
-            <h3>Daily Aloe Multivitamin</h3>
-            <p>55 aloe-coated vitamins &amp; minerals to cover your daily nutritional needs.</p>
-            <div class="prod-foot"><span class="prod-price">₵284.00</span><a href="#contact" class="prod-link">Order →</a></div>
+            <h3>Forever Daily</h3>
+            <p>A complete daily multivitamin and mineral formula, gentle enough to take on an empty stomach.</p>
+            <div class="prod-foot"><span class="prod-price">₵284.00</span><a href="https://wa.me/233544003712" class="prod-link" target="_blank" rel="noopener">Order →</a></div>
           </div>
         </div>
 
         <div class="prod-card reveal">
-          <div class="prod-media"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 21V9l8-6 8 6v12M9 21v-6h6v6"/></svg></div>
+          <div class="prod-media"><img src="assets/products/aloe-propolis-creme.jpg" alt="Forever Aloe Propolis Creme" loading="lazy"><span class="prod-watermark"><img src="assets/logo.jpg" alt="" aria-hidden="true"></span></div>
           <div class="prod-body">
             <span class="prod-cat">Skin Care</span>
-            <h3>Aloe Avocado Face &amp; Body Soap</h3>
-            <p>A gentle, naturally derived soap that cleanses without stripping your skin.</p>
-            <div class="prod-foot"><span class="prod-price">₵87.00</span><a href="#contact" class="prod-link">Order →</a></div>
+            <h3>Forever Aloe Propolis Creme</h3>
+            <p>A rich, protective moisturiser blending aloe vera and bee propolis for soft, nourished skin.</p>
+            <div class="prod-foot"><span class="prod-price">₵87.00</span><a href="https://wa.me/233544003712" class="prod-link" target="_blank" rel="noopener">Order →</a></div>
           </div>
         </div>
 
         <div class="prod-card reveal">
-          <div class="prod-media"><span class="prod-tag">New</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          <div class="prod-media"><span class="prod-tag">New</span><img src="assets/products/bee-pollen.jpg" alt="Forever Bee Pollen tablets" loading="lazy"><span class="prod-watermark"><img src="assets/logo.jpg" alt="" aria-hidden="true"></span></div>
           <div class="prod-body">
             <span class="prod-cat">Energy &amp; Vitality</span>
-            <h3>Active Energy Boost Drink</h3>
-            <p>A crisp, fast-acting drink with B6 &amp; B12 to fight off tiredness naturally.</p>
-            <div class="prod-foot"><span class="prod-price">₵67.00</span><a href="#contact" class="prod-link">Order →</a></div>
+            <h3>Forever Bee Pollen</h3>
+            <p>Nature's own energy source — a natural way to support stamina and everyday vitality.</p>
+            <div class="prod-foot"><span class="prod-price">₵67.00</span><a href="https://wa.me/233544003712" class="prod-link" target="_blank" rel="noopener">Order →</a></div>
           </div>
         </div>
 
         <div class="prod-card reveal">
-          <div class="prod-media"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.35-9.5-8.5C.5 8 3 4 7 4c2 0 4 1.5 5 3 1-1.5 3-3 5-3 4 0 6.5 4 4.5 8.5C19 16.65 12 21 12 21z"/></svg></div>
+          <div class="prod-media"><img src="assets/products/cardiohealth.jpg" alt="Forever CardioHealth with CoQ10" loading="lazy"><span class="prod-watermark"><img src="assets/logo.jpg" alt="" aria-hidden="true"></span></div>
           <div class="prod-body">
             <span class="prod-cat">Cardio Health</span>
-            <h3>CardioHealth with CoQ10</h3>
+            <h3>Forever CardioHealth</h3>
             <p>A heart-supportive daily formula built around antioxidant CoQ10.</p>
-            <div class="prod-foot"><span class="prod-price">₵429.00</span><a href="#contact" class="prod-link">Order →</a></div>
+            <div class="prod-foot"><span class="prod-price">₵429.00</span><a href="https://wa.me/233544003712" class="prod-link" target="_blank" rel="noopener">Order →</a></div>
+          </div>
+        </div>
+
+        <div class="prod-card reveal">
+          <div class="prod-media"><span class="prod-tag">Popular</span><img src="assets/products/lite-ultra-shake.jpg" alt="Forever Lite Ultra weight management shake" loading="lazy"><span class="prod-watermark"><img src="assets/logo.jpg" alt="" aria-hidden="true"></span></div>
+          <div class="prod-body">
+            <span class="prod-cat">Weight Management</span>
+            <h3>Forever Lite Ultra Shake</h3>
+            <p>A protein-rich meal replacement shake that supports healthy, sustainable weight goals.</p>
+            <div class="prod-foot"><span class="prod-price">₵349.00</span><a href="https://wa.me/233544003712" class="prod-link" target="_blank" rel="noopener">Order →</a></div>
+          </div>
+        </div>
+
+        <div class="prod-card reveal">
+          <div class="prod-media"><img src="assets/products/royal-jelly.jpg" alt="Forever Royal Jelly" loading="lazy"><span class="prod-watermark"><img src="assets/logo.jpg" alt="" aria-hidden="true"></span></div>
+          <div class="prod-body">
+            <span class="prod-cat">Bee Hive Products</span>
+            <h3>Forever Royal Jelly</h3>
+            <p>A natural immunity blend built around pure royal jelly, prized for supporting vitality.</p>
+            <div class="prod-foot"><span class="prod-price">₵198.00</span><a href="https://wa.me/233544003712" class="prod-link" target="_blank" rel="noopener">Order →</a></div>
+          </div>
+        </div>
+
+        <div class="prod-card reveal">
+          <div class="prod-media"><img src="assets/products/forever-freedom.jpg" alt="Forever Freedom joint mobility supplement" loading="lazy"><span class="prod-watermark"><img src="assets/logo.jpg" alt="" aria-hidden="true"></span></div>
+          <div class="prod-body">
+            <span class="prod-cat">Bone &amp; Joint Care</span>
+            <h3>Forever Freedom</h3>
+            <p>Glucosamine, chondroitin and aloe combine to help you move comfortably, day after day.</p>
+            <div class="prod-foot"><span class="prod-price">₵312.00</span><a href="https://wa.me/233544003712" class="prod-link" target="_blank" rel="noopener">Order →</a></div>
+          </div>
+        </div>
+
+        <div class="prod-card reveal">
+          <div class="prod-media"><span class="prod-tag">Gentle</span><img src="assets/products/aloe-vera-gelly.jpg" alt="Forever Aloe Vera Gelly" loading="lazy"><span class="prod-watermark"><img src="assets/logo.jpg" alt="" aria-hidden="true"></span></div>
+          <div class="prod-body">
+            <span class="prod-cat">Personal Care</span>
+            <h3>Forever Aloe Vera Gelly</h3>
+            <p>A lightweight, fast-absorbing topical gel for soft, soothed, hydrated skin all day.</p>
+            <div class="prod-foot"><span class="prod-price">₵96.00</span><a href="https://wa.me/233544003712" class="prod-link" target="_blank" rel="noopener">Order →</a></div>
           </div>
         </div>
 
       </div>
       <div class="products-cta reveal">
-        <a href="https://wa.me/233000000000" class="btn btn-primary" target="_blank" rel="noopener">See Full Product Catalogue</a>
+        <a href="https://wa.me/233544003712" class="btn btn-primary" target="_blank" rel="noopener">See Full Product Catalogue</a>
       </div>
+    </div>
+  </section>
+
+  <!-- LIFESTYLE BANNER -->
+  <section class="lifestyle" aria-label="PrymCare lifestyle gallery">
+    <div class="lifestyle-grid">
+      <figure><img src="assets/lifestyle/sourcing.jpg" alt="Fresh natural ingredients used in PrymCare products" loading="lazy"><figcaption>100% Natural Sourcing</figcaption></figure>
+      <figure><img src="assets/lifestyle/active.jpg" alt="Person enjoying an active, healthy lifestyle" loading="lazy"><figcaption>Real, Active Living</figcaption></figure>
+      <figure><img src="assets/lifestyle/routine.jpg" alt="Healthy morning routine with wellness products" loading="lazy"><figcaption>Simple Daily Routines</figcaption></figure>
+      <figure><img src="assets/lifestyle/results.jpg" alt="Radiant, healthy skin from natural skincare" loading="lazy"><figcaption>Visible, Lasting Results</figcaption></figure>
     </div>
   </section>
 
@@ -826,7 +947,7 @@ footer a:hover{color:#fff;}
       </div>
       <div class="blog-grid">
         <article class="blog-card reveal">
-          <div class="blog-media"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+          <div class="blog-media"><img src="assets/blog/cardio.jpg" alt="Heart-healthy lifestyle habits" loading="lazy"></div>
           <div class="blog-body">
             <span class="blog-cat">Cardio Health</span>
             <h3>Five natural habits that support stable blood pressure</h3>
@@ -835,7 +956,7 @@ footer a:hover{color:#fff;}
           </div>
         </article>
         <article class="blog-card reveal">
-          <div class="blog-media"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><path d="M12 2C7 2 3 6 3 12c0 5 4 9 9 9 1-5 1-9 1-9s4 0 9-1c0-5-4-9-9-9z"/></svg></div>
+          <div class="blog-media"><img src="assets/blog/aloe.jpg" alt="Fresh aloe vera plant leaves" loading="lazy"></div>
           <div class="blog-body">
             <span class="blog-cat">Nutrition</span>
             <h3>Why aloe vera belongs in your daily supplement routine</h3>
@@ -844,7 +965,7 @@ footer a:hover{color:#fff;}
           </div>
         </article>
         <article class="blog-card reveal">
-          <div class="blog-media"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <div class="blog-media"><img src="assets/blog/wellness.jpg" alt="Wellness awareness and healthy living" loading="lazy"></div>
           <div class="blog-body">
             <span class="blog-cat">Wellness Awareness</span>
             <h3>Understanding hepatitis: prevention and everyday protection</h3>
@@ -930,7 +1051,7 @@ footer a:hover{color:#fff;}
           </div>
           <div class="c-row">
             <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.5 2.1L8 9.8a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.5c.9.3 1.8.5 2.7.6a2 2 0 011.9 2z"/></svg></div>
-            <div><b>WhatsApp / Call</b><a href="https://wa.me/233000000000">+233 00 000 0000</a></div>
+            <div><b>WhatsApp / Call</b><a href="https://wa.me/233544003712">+233 54 400 3712</a></div>
           </div>
           <div class="c-row">
             <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
@@ -1035,7 +1156,7 @@ footer a:hover{color:#fff;}
         <h4>Contact</h4>
         <ul>
           <li><a href="mailto:hello@prymcarehealth.com">hello@prymcarehealth.com</a></li>
-          <li><a href="https://wa.me/233000000000">+233 00 000 0000</a></li>
+          <li><a href="https://wa.me/233544003712">+233 54 400 3712</a></li>
           <li><a href="#contact">Accra, Ghana</a></li>
         </ul>
       </div>
@@ -1052,7 +1173,7 @@ footer a:hover{color:#fff;}
   </div>
 </footer>
 
-<a href="https://wa.me/233000000000" class="wa-float" target="_blank" rel="noopener" aria-label="Chat with PrymCare Health on WhatsApp">
+<a href="https://wa.me/233544003712" class="wa-float" target="_blank" rel="noopener" aria-label="Chat with PrymCare Health on WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.44 5.13L2 22l5.13-1.55a9.9 9.9 0 004.91 1.3h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.02c-1.53 0-3-.4-4.28-1.15l-.31-.18-3.05.92.94-2.97-.2-.31a8.13 8.13 0 01-1.24-4.42c0-4.5 3.66-8.16 8.16-8.16 4.5 0 8.16 3.66 8.16 8.16-.01 4.5-3.67 8.11-8.18 8.11zm4.48-6.11c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.78.95-.14.16-.29.18-.53.06-.24-.12-1.03-.38-1.96-1.21-.72-.64-1.21-1.44-1.35-1.68-.14-.24-.02-.37.11-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42-.14-.01-.3-.01-.46-.01-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.13 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/></svg>
 </a>
 
