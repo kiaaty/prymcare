@@ -46,6 +46,7 @@
   "logo": "https://www.prymcare.com/assets/logo.jpg",
   "url": "https://www.prymcare.com/",
   "telephone": "+233544003712",
+  "email": "prymcare@gmail.com",
   "priceRange": "₵₵",
   "address": {
     "@type": "PostalAddress",
@@ -96,10 +97,10 @@
   "@context": "https://schema.org",
   "@type": "ItemList",
   "itemListElement": [
-    {"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Pure Aloe Vera Gel","description":"Stabilised drinking gel made from 99.7% inner-leaf aloe vera pulp.","offers":{"@type":"Offer","priceCurrency":"GHS","price":"195.00","availability":"https://schema.org/InStock"}}},
-    {"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Daily Aloe Multivitamin","description":"Aloe-coated multivitamin and mineral tablets for everyday nutrition.","offers":{"@type":"Offer","priceCurrency":"GHS","price":"284.00","availability":"https://schema.org/InStock"}}},
-    {"@type":"ListItem","position":3,"item":{"@type":"Product","name":"CardioHealth with CoQ10","description":"Heart-supportive daily formula built around antioxidant CoQ10.","offers":{"@type":"Offer","priceCurrency":"GHS","price":"429.00","availability":"https://schema.org/InStock"}}},
-    {"@type":"ListItem","position":4,"item":{"@type":"Product","name":"Freedom Joint Support Formula","description":"Glucosamine-based blend supporting bone and joint comfort.","offers":{"@type":"Offer","priceCurrency":"GHS","price":"518.00","availability":"https://schema.org/InStock"}}}
+    {"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Forever Aloe Vera Gel","description":"Stabilised drinking gel made from 99.7% inner-leaf aloe vera pulp.","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"471.94","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/shop.html"}}},
+    {"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Forever Daily","description":"A comprehensive aloe-based multivitamin and mineral tablet for everyday nutrition.","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"370.23","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/shop.html"}}},
+    {"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Forever Cardio Health","description":"A heart-supportive daily formula built around antioxidant CoQ10.","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"636.21","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/shop.html"}}},
+    {"@type":"ListItem","position":4,"item":{"@type":"Product","name":"Forever Freedom","description":"A glucosamine-based drink supporting mobility and everyday joint comfort.","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"675.74","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/shop.html"}}}
   ]
 }
 </script>
@@ -348,13 +349,16 @@ nav.primary a:hover::after{width:100%;}
 .categories{background:var(--linen);}
 .cat-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:18px;}
 @media(min-width:720px){ .cat-grid{grid-template-columns:repeat(3,1fr);} }
-@media(min-width:1100px){ .cat-grid{grid-template-columns:repeat(5,1fr);} }
+@media(min-width:1100px){ .cat-grid{grid-template-columns:repeat(4,1fr);} }
+@media(min-width:1300px){ .cat-grid{grid-template-columns:repeat(6,1fr);} }
 .cat-card{
   background:#fff; border-radius:18px; padding:26px 22px; border:1px solid var(--line);
   transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease; position:relative; overflow:hidden;
+  text-decoration:none; display:block; cursor:pointer;
 }
 .cat-card::after{content:""; position:absolute; right:-30px; bottom:-30px; width:90px; height:90px; border-radius:50%; background:rgba(140,198,63,0.1);}
 .cat-card:hover{transform:translateY(-6px); box-shadow:var(--shadow); border-color:transparent;}
+.cat-card:hover .cat-shop-link{color:var(--canopy); text-decoration:underline;}
 .cat-card .ic{
   width:48px; height:48px; border-radius:14px; background:linear-gradient(150deg,var(--aloe),var(--canopy));
   display:flex; align-items:center; justify-content:center; color:#fff; margin-bottom:16px; position:relative; z-index:1;
@@ -362,52 +366,7 @@ nav.primary a:hover::after{width:100%;}
 .cat-card .ic svg{width:24px; height:24px;}
 .cat-card h3{font-size:16px; margin-top:2px; position:relative;}
 .cat-card p{font-size:13px; color:var(--ink-soft); margin-top:8px; line-height:1.5; position:relative;}
-
-/* ============ PRODUCTS ============ */
-.products{background:#fff;}
-.filter-bar{display:flex; gap:10px; overflow-x:auto; padding-bottom:6px; margin-bottom:14px; scrollbar-width:thin;}
-.filter-btn{
-  flex-shrink:0; padding:10px 18px; border-radius:100px; border:1.5px solid var(--line); background:var(--linen);
-  font-family:var(--ff-body); font-weight:700; font-size:13px; color:var(--ink-soft); cursor:pointer; transition:all .25s ease; white-space:nowrap;
-}
-.filter-btn:hover{border-color:var(--aloe); color:var(--canopy-2);}
-.filter-btn.active{background:var(--canopy); border-color:var(--canopy); color:#fff;}
-.search-box{position:relative; max-width:340px; margin-bottom:36px;}
-.search-box svg{position:absolute; left:14px; top:50%; transform:translateY(-50%); width:17px; height:17px; color:var(--ink-soft);}
-.search-box input{
-  width:100%; padding:12px 16px 12px 40px; border-radius:100px; border:1.5px solid var(--line);
-  font-family:var(--ff-body); font-size:14px; background:var(--linen); transition:border-color .25s ease, background .25s ease;
-}
-.search-box input:focus{border-color:var(--aloe); background:#fff; outline:none;}
-
-.prod-grid{display:grid; grid-template-columns:1fr; gap:24px;}
-@media(min-width:640px){ .prod-grid{grid-template-columns:repeat(2,1fr);} }
-@media(min-width:980px){ .prod-grid{grid-template-columns:repeat(3,1fr);} }
-@media(min-width:1240px){ .prod-grid{grid-template-columns:repeat(4,1fr);} }
-.prod-card{
-  border:1px solid var(--line); border-radius:20px; overflow:hidden; background:var(--linen);
-  display:flex; flex-direction:column; transition:transform .3s ease, box-shadow .3s ease, opacity .25s ease;
-}
-.prod-card:hover{transform:translateY(-6px); box-shadow:var(--shadow);}
-.prod-media{
-  aspect-ratio:1; display:flex; align-items:center; justify-content:center;
-  position:relative; overflow:hidden;
-}
-.prod-media svg{width:66%; height:66%;}
-.prod-tag{position:absolute; top:12px; left:12px; background:var(--honey); color:var(--canopy-2); font-size:10.5px; font-weight:800; padding:5px 10px; border-radius:100px; letter-spacing:0.04em; text-transform:uppercase; z-index:2;}
-.prod-body{padding:18px 18px 22px; display:flex; flex-direction:column; gap:8px; flex:1;}
-.prod-cat{font-size:11px; font-weight:700; color:var(--aloe); text-transform:uppercase; letter-spacing:0.06em;}
-.prod-body h3{font-size:16px;}
-.prod-stars{display:flex; align-items:center; gap:6px; font-size:12px; color:var(--honey-dark); font-weight:700;}
-.prod-stars span{color:var(--ink-soft); font-weight:600;}
-.prod-body p{font-size:13px; color:var(--ink-soft); flex:1;}
-.prod-foot{display:flex; align-items:center; justify-content:space-between; margin-top:6px; gap:10px;}
-.prod-price{font-family:var(--ff-display); font-weight:700; font-size:19px; color:var(--canopy-2);}
-.prod-link{font-size:12.5px; font-weight:800; color:#fff; background:var(--canopy); text-decoration:none; display:flex; align-items:center; gap:5px; padding:9px 14px; border-radius:100px; transition:background .25s ease;}
-.prod-link:hover{background:var(--aloe);}
-.products-cta{text-align:center; margin-top:48px;}
-.no-results{text-align:center; padding:40px 20px; color:var(--ink-soft); display:none;}
-.no-results.show{display:block;}
+.cat-shop-link{display:inline-block; margin-top:14px; font-size:12px; font-weight:800; color:var(--aloe); position:relative; letter-spacing:0.02em;}
 
 /* ============ JOURNEY ============ */
 .journey{background:var(--canopy); color:#fff; position:relative; overflow:hidden;}
@@ -558,6 +517,9 @@ nav.primary a:hover::after{width:100%;}
 footer{background:var(--canopy-2); color:rgba(255,255,255,0.65); padding:64px 0 26px; font-size:13.5px;}
 .foot-grid{display:grid; grid-template-columns:1fr; gap:40px;}
 @media(min-width:780px){ .foot-grid{grid-template-columns:1.3fr 1fr 1fr 1fr;} }
+.foot-grid-wide{grid-template-columns:1fr;}
+@media(min-width:640px){ .foot-grid-wide{grid-template-columns:1fr 1fr;} }
+@media(min-width:980px){ .foot-grid-wide{grid-template-columns:1.1fr 1fr 1fr 1fr 1fr;} }
 .foot-brand{display:flex; align-items:center; gap:12px; margin-bottom:14px;}
 .foot-brand img{width:40px; height:40px; border-radius:50%;}
 .foot-brand b{color:#fff; font-family:var(--ff-display); font-size:17px;}
@@ -661,10 +623,11 @@ footer a:hover{color:#fff;}
       <a href="#testimonials">Testimonials</a>
       <a href="#blog">Wellness Library</a>
       <a href="#partner">Become a Partner</a>
+      <a href="#contact">Contact</a>
     </nav>
     <div class="nav-cta">
       <a href="#contact" class="btn btn-ghost" style="padding:12px 20px;">Contact Us</a>
-      <a href="https://prymcare.com/shop.html" class="btn btn-primary" style="padding:12px 22px;" target="_self" rel="noopener">Shop Now</a>
+      <a href="shop.html" class="btn btn-primary" style="padding:12px 22px;">Shop Now</a>
     </div>
     <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
       <span></span>
@@ -678,7 +641,7 @@ footer a:hover{color:#fff;}
     <a href="#blog">Wellness Library</a>
     <a href="#partner">Become a Partner</a>
     <a href="#contact">Contact</a>
-    <a href="https://prymcare.com/shop.html" class="btn btn-primary" target="_self" rel="noopener">Shop Now</a>
+    <a href="shop.html" class="btn btn-primary">Shop Now</a>
   </div>
 </header>
 
@@ -766,12 +729,12 @@ footer a:hover{color:#fff;}
       <div class="about-copy reveal">
         <span class="eyebrow">Who we are</span>
         <h2>A Ghanaian wellness partner, not just a product shelf.</h2>
-        <p>PrymCare Health is an Accra-based health and wellness business built around one simple belief: nature, used well, does remarkable things for the body. We curate aloe vera–based nutrition, weight management, skin care and personal care products, and we personally guide every customer toward the combination that fits their goals.</p>
-        <p>We're not a faceless store. As a registered distributor and Business Owner, our founder handpicks every product on this site, tests it personally, and stands behind every recommendation with honest, one-on-one support — from your first question to your ongoing wellness journey.</p>
+        <p>PrymCare Health is an Accra-based health and wellness business built around one simple belief: nature, used well, does remarkable things for the body. We curate <a href="shop.html" style="color:var(--aloe); font-weight:700; text-decoration:underline;">aloe vera–based nutrition, weight management, skin care and personal care products</a>, and we personally guide every customer toward the combination that fits their goals.</p>
+        <p>We're not a faceless store. As a registered distributor and Business Owner, our founder handpicks every product on this site, tests it personally, and stands behind every recommendation with honest, one-on-one support — from your <a href="#contact" style="color:var(--aloe); font-weight:700; text-decoration:underline;">first question</a> to your ongoing wellness journey. Curious what that looks like day to day? We also welcome new <a href="#partner" style="color:var(--aloe); font-weight:700; text-decoration:underline;">distribution partners</a> who want to build a business around the same products.</p>
         <div class="stat-strip">
-          <div class="stat"><b class="count-up" data-target="10">0</b><span>Product Categories</span></div>
+          <div class="stat"><a href="#categories" style="text-decoration:none;"><b class="count-up" data-target="12">0</b><span>Product Categories</span></a></div>
           <div class="stat"><b class="count-up" data-target="160" data-suffix="+">0</b><span>Countries Certified In</span></div>
-          <div class="stat"><b class="count-up" data-target="4.9" data-suffix="★">0</b><span>Average Customer Rating</span></div>
+          <div class="stat"><a href="#testimonials" style="text-decoration:none;"><b class="count-up" data-target="4.9" data-suffix="★">0</b><span>Average Customer Rating</span></a></div>
         </div>
       </div>
     </div>
@@ -787,72 +750,113 @@ footer a:hover{color:#fff;}
       </div>
       <div class="cat-grid">
 
-        <div class="cat-card reveal">
+        <a href="shop.html?cat=nutrition" class="cat-card reveal" aria-label="Shop Nutritional Supplements products">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7h-9a4 4 0 00-4 4v9M4 4l16 16"/></svg></div>
           <h3>Nutritional Supplements</h3>
           <p>Daily multivitamins and aloe-based formulas that fill everyday nutrition gaps.</p>
-        </div>
+          <span class="cat-shop-link">Shop Nutritional range →</span>
+        </a>
 
-        <div class="cat-card reveal">
+        <a href="shop.html?cat=weight" class="cat-card reveal" aria-label="Shop Weight Management products">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
           <h3>Weight Management</h3>
           <p>Clean-label programmes and shakes for sustainable, healthy habits.</p>
-        </div>
+          <span class="cat-shop-link">Shop Weight range →</span>
+        </a>
 
-        <div class="cat-card reveal">
+        <a href="shop.html?cat=skin" class="cat-card reveal" aria-label="Shop Skin Care products">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c3 3 6 6.5 6 10a6 6 0 01-12 0c0-3.5 3-7 6-10z"/></svg></div>
           <h3>Skin Care</h3>
           <p>Aloe-first cleansers, soaps and moisturisers for healthier-looking skin.</p>
-        </div>
+          <span class="cat-shop-link">Shop Skin range →</span>
+        </a>
 
-        <div class="cat-card reveal">
+        <a href="shop.html?cat=personal" class="cat-card reveal" aria-label="Shop Personal Care products">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.35-9.5-8.5C.5 8 3 4 7 4c2 0 4 1.5 5 3 1-1.5 3-3 5-3 4 0 6.5 4 4.5 8.5C19 16.65 12 21 12 21z"/></svg></div>
           <h3>Personal Care</h3>
           <p>Gentle, everyday essentials formulated with naturally derived ingredients.</p>
-        </div>
+          <span class="cat-shop-link">Shop Personal range →</span>
+        </a>
 
-        <div class="cat-card reveal">
+        <a href="shop.html?cat=bee" class="cat-card reveal" aria-label="Shop Bee Hive products">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 5-3 3-3-3 3-5zM6 14a6 6 0 0012 0"/></svg></div>
           <h3>Bee Hive Products</h3>
           <p>Propolis, bee pollen and royal jelly for natural immunity and vitality.</p>
-        </div>
+          <span class="cat-shop-link">Shop Bee Hive range →</span>
+        </a>
 
-        <div class="cat-card reveal">
+        <a href="shop.html?cat=cardio" class="cat-card reveal" aria-label="Shop Cardio Health products">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
           <h3>Cardio Health</h3>
           <p>Heart-supporting formulas with CoQ10 to help you keep pace with life.</p>
-        </div>
+          <span class="cat-shop-link">Shop Cardio range →</span>
+        </a>
 
-        <div class="cat-card reveal">
+        <a href="shop.html?cat=bone" class="cat-card reveal" aria-label="Shop Bone &amp; Joint products">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 12a6 6 0 0112 0v3a3 3 0 01-3 3H9a3 3 0 01-3-3v-3z"/></svg></div>
           <h3>Bone &amp; Joint Care</h3>
           <p>Freedom and mobility-focused blends to keep you moving comfortably.</p>
-        </div>
+          <span class="cat-shop-link">Shop Bone range →</span>
+        </a>
 
-        <div class="cat-card reveal">
+        <a href="shop.html?cat=eye" class="cat-card reveal" aria-label="Shop Eye Care products">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
           <h3>Optimum Eye Care</h3>
           <p>Targeted nutrients that support long-term eye health and clarity.</p>
-        </div>
+          <span class="cat-shop-link">Shop Eye range →</span>
+        </a>
 
-        <div class="cat-card reveal">
+        <a href="shop.html?cat=energy" class="cat-card reveal" aria-label="Shop Energy &amp; Vitality products">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></svg></div>
           <h3>Energy &amp; Vitality</h3>
           <p>Fast-acting, naturally sourced boosts for tiredness and low energy days.</p>
-        </div>
+          <span class="cat-shop-link">Shop Energy range →</span>
+        </a>
 
-        <div class="cat-card reveal">
+        <a href="shop.html?cat=fertility" class="cat-card reveal" aria-label="Shop Fertility &amp; Wellness products">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.35-9.5-8.5C.5 8 3 4 7 4c2 0 4 1.5 5 3 1-1.5 3-3 5-3 4 0 6.5 4 4.5 8.5C19 16.65 12 21 12 21z"/><path d="M12 8v3M10.5 9.5h3"/></svg></div>
           <h3>Fertility &amp; Wellness</h3>
           <p>Nutrient blends supporting reproductive health and overall vitality.</p>
-        </div>
+          <span class="cat-shop-link">Shop Fertility range →</span>
+        </a>
 
+        <a href="shop.html?cat=drinks" class="cat-card reveal" aria-label="Shop Aloe Drinks products">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3h14l-1.5 15.5a2 2 0 01-2 1.8H8.5a2 2 0 01-2-1.8L5 3z"/><path d="M5 8h14"/></svg></div>
+          <h3>Aloe Drinks</h3>
+          <p>The original aloe vera drinking gel range, plus nectars and herbal teas.</p>
+          <span class="cat-shop-link">Shop Aloe Drinks →</span>
+        </a>
+
+        <a href="shop.html?cat=programs" class="cat-card reveal" aria-label="Shop Wellness Programs">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M4 11h16M9 7V4a1 1 0 011-1h4a1 1 0 011 1v3"/></svg></div>
+          <h3>Wellness Programs</h3>
+          <p>Structured multi-product systems like C9, F15 and Vital 5 for bigger goals.</p>
+          <span class="cat-shop-link">Shop Programs →</span>
+        </a>
+
+      </div>
+      <div style="text-align:center; margin-top:40px;">
+        <a href="shop.html" class="btn btn-primary">Visit the Full Shop →</a>
       </div>
     </div>
   </section>
 
-  <!-- FEATURED PRODUCTS -->
- 
+  <!-- JOURNEY / HOW IT WORKS -->
+  <section class="section journey" id="journey">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">How it works</span>
+        <h2>Your wellness journey, guided from the first message.</h2>
+        <p>No guesswork. We walk with you from your very first question to a routine that actually fits your life.</p>
+      </div>
+      <div class="j-grid">
+        <div class="j-card reveal"><span class="j-num">STEP 01</span><h3>Tell us your goal</h3><p>Message us on WhatsApp or <a href="#contact" style="color:var(--sprout); font-weight:700;">fill the contact form</a> — share what you're hoping to improve.</p></div>
+        <div class="j-card reveal"><span class="j-num">STEP 02</span><h3>Get a personal plan</h3><p>We recommend a simple, honest combination of <a href="shop.html" style="color:var(--sprout); font-weight:700;">products</a> — never more than you need.</p></div>
+        <div class="j-card reveal"><span class="j-num">STEP 03</span><h3>We deliver, you begin</h3><p>Fast delivery across Accra and nationwide, with clear usage guidance included.</p></div>
+        <div class="j-card reveal"><span class="j-num">STEP 04</span><h3>Ongoing support</h3><p>We check in, answer questions, and adjust your plan — see what real customers say in our <a href="#testimonials" style="color:var(--sprout); font-weight:700;">testimonials</a>.</p></div>
+      </div>
+    </div>
+  </section>
 
   <!-- TESTIMONIALS -->
   <section class="section testimonials" id="testimonials">
@@ -867,26 +871,31 @@ footer a:hover{color:#fff;}
             <div class="t-stars">★★★★★</div>
             <p class="quote">"I started with the daily multivitamin for energy and stuck around for the honest advice. PrymCare actually follows up to see how you're doing."</p>
             <div class="t-person"><div class="t-avatar">A.</div><div><b>Ama O.</b><span>Accra</span></div></div>
+            <a href="shop.html?cat=nutrition" class="prod-cat" style="text-decoration:none;">Shop Daily Aloe Multivitamin →</a>
           </div>
           <div class="t-card">
             <div class="t-stars">★★★★★</div>
             <p class="quote">"The skin care range cleared up dryness I'd struggled with for months. Delivery was quick and the packaging felt premium."</p>
             <div class="t-person"><div class="t-avatar">K.</div><div><b>Kwame T.</b><span>Tema</span></div></div>
+            <a href="shop.html?cat=skin" class="prod-cat" style="text-decoration:none;">Shop Skin Care range →</a>
           </div>
           <div class="t-card">
             <div class="t-stars">★★★★★</div>
             <p class="quote">"I joined as a partner after months of buying products. The training was clear and my first customers came from people who already trusted me."</p>
             <div class="t-person"><div class="t-avatar">E.</div><div><b>Efua N.</b><span>Kumasi</span></div></div>
+            <a href="#partner" class="prod-cat" style="text-decoration:none;">See the Partner Programme →</a>
           </div>
           <div class="t-card">
             <div class="t-stars">★★★★☆</div>
             <p class="quote">"The joint support formula genuinely helped my mother move around more comfortably. WhatsApp ordering made repeat purchases effortless."</p>
             <div class="t-person"><div class="t-avatar">D.</div><div><b>Daniel A.</b><span>Takoradi</span></div></div>
+            <a href="shop.html?cat=bone" class="prod-cat" style="text-decoration:none;">Shop Bone &amp; Joint Care →</a>
           </div>
           <div class="t-card">
             <div class="t-stars">★★★★★</div>
             <p class="quote">"Fast replies, honest recommendations, and products that actually match what's advertised. Exactly what I look for in a health business."</p>
             <div class="t-person"><div class="t-avatar">N.</div><div><b>Naa A.</b><span>Accra</span></div></div>
+            <a href="shop.html" class="prod-cat" style="text-decoration:none;">Browse all products →</a>
           </div>
         </div>
         <div class="t-nav">
@@ -914,7 +923,7 @@ footer a:hover{color:#fff;}
             <span class="blog-cat">Cardio Health</span>
             <h3>Five natural habits that support stable blood pressure</h3>
             <p>Simple, doctor-friendly lifestyle habits that pair well with a heart-healthy diet.</p>
-            <a href="#contact" class="blog-read">Read more →</a>
+            <a href="shop.html?cat=cardio" class="blog-read">Shop Cardio Health products →</a>
           </div>
         </article>
         <article class="blog-card reveal">
@@ -925,7 +934,7 @@ footer a:hover{color:#fff;}
             <span class="blog-cat">Nutrition</span>
             <h3>Why aloe vera belongs in your daily supplement routine</h3>
             <p>A closer look at how aloe-coated nutrients are absorbed by the body.</p>
-            <a href="#contact" class="blog-read">Read more →</a>
+            <a href="shop.html?cat=nutrition" class="blog-read">Shop Nutritional Supplements →</a>
           </div>
         </article>
         <article class="blog-card reveal">
@@ -936,7 +945,7 @@ footer a:hover{color:#fff;}
             <span class="blog-cat">Wellness Awareness</span>
             <h3>Understanding hepatitis: prevention and everyday protection</h3>
             <p>What every household should know about risk factors and prevention.</p>
-            <a href="#contact" class="blog-read">Read more →</a>
+            <a href="#faq" class="blog-read">See our health &amp; safety FAQ →</a>
           </div>
         </article>
         <article class="blog-card reveal">
@@ -947,7 +956,7 @@ footer a:hover{color:#fff;}
             <span class="blog-cat">Immunity</span>
             <h3>Bee propolis: nature's quiet immune supporter</h3>
             <p>How this hive-derived compound has earned its place in daily wellness routines.</p>
-            <a href="#contact" class="blog-read">Read more →</a>
+            <a href="shop.html?cat=bee" class="blog-read">Shop Bee Hive Products →</a>
           </div>
         </article>
         <article class="blog-card reveal">
@@ -958,7 +967,7 @@ footer a:hover{color:#fff;}
             <span class="blog-cat">Weight Management</span>
             <h3>Weight management without the crash-diet cycle</h3>
             <p>Why slow, steady habits outperform extreme diets — and how to start one this week.</p>
-            <a href="#contact" class="blog-read">Read more →</a>
+            <a href="shop.html?cat=weight" class="blog-read">Shop Weight Management →</a>
           </div>
         </article>
         <article class="blog-card reveal">
@@ -969,7 +978,7 @@ footer a:hover{color:#fff;}
             <span class="blog-cat">Eye Care</span>
             <h3>Screen fatigue: everyday habits to protect your eyesight</h3>
             <p>Practical adjustments for anyone spending long hours on a phone or laptop.</p>
-            <a href="#contact" class="blog-read">Read more →</a>
+            <a href="shop.html?cat=eye" class="blog-read">Shop Eye Care products →</a>
           </div>
         </article>
       </div>
@@ -1011,6 +1020,7 @@ footer a:hover{color:#fff;}
         </a>
       </div>
       <div style="text-align:center; margin-top:36px;">
+        <a href="https://www.instagram.com/prymcare" class="btn btn-primary" target="_blank" rel="noopener">Follow @prymcare</a>
       </div>
     </div>
   </section>
@@ -1055,15 +1065,15 @@ footer a:hover{color:#fff;}
         </details>
         <details class="faq-item">
           <summary>Can I become a PrymCare Health distributor?<span class="plus">+</span></summary>
-          <div class="a">Absolutely — we welcome new partners into our business opportunity programme, with training, mentorship and ongoing support as you build your own wellness business.</div>
+          <div class="a">Absolutely — we welcome new partners into our <a href="#partner" style="color:var(--aloe); font-weight:700;">business opportunity programme</a>, with training, mentorship and ongoing support as you build your own wellness business.</div>
         </details>
         <details class="faq-item">
           <summary>Do you deliver across Ghana?<span class="plus">+</span></summary>
-          <div class="a">Yes, we deliver within Accra and nationwide across Ghana, with international ordering support available for select products.</div>
+          <div class="a">Yes, we deliver within Accra and nationwide across Ghana, with international ordering support available for select products. <a href="#contact" style="color:var(--aloe); font-weight:700;">Contact us</a> to confirm delivery to your area.</div>
         </details>
         <details class="faq-item">
           <summary>How do I know which products are right for me?<span class="plus">+</span></summary>
-          <div class="a">Message us with your goal — whether it's energy, weight management or skin health — and we'll recommend a simple starting combination based on your needs and budget.</div>
+          <div class="a">Message us with your goal — whether it's <a href="shop.html?cat=energy" style="color:var(--aloe); font-weight:700;">energy</a>, <a href="shop.html?cat=weight" style="color:var(--aloe); font-weight:700;">weight management</a> or <a href="shop.html?cat=skin" style="color:var(--aloe); font-weight:700;">skin health</a> — and we'll recommend a simple starting combination based on your needs and budget.</div>
         </details>
       </div>
     </div>
@@ -1170,27 +1180,51 @@ footer a:hover{color:#fff;}
 
 <footer>
   <div class="container">
-    <div class="foot-grid">
+    <div class="foot-grid foot-grid-wide">
       <div>
         <div class="foot-brand"><img src="data:image/jpeg;base64,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cM+OQZPSLow/FKF1IyQRkvY7XcC4dg3tYINnovhbqOigpXODjDEyMuAsHaotcA7EER0j6PZazGYMTfMwRwGG0Oq4uIicX97Z3yUGP0n9GLsXniqIpmxOZGY36zXO1gHFzLWOVtZ/rCDadIGgYxGghooXti6h7CxxaXDVYx0erYciPUg29Do2w4ZHh1ZqzNbAyF+0BwYAA4bwcmkHaCEFbv6HsQpnObhuKSRQvNywuljO7b1Rs85bbBBLujzo3gwoumc8z1LwQ6ZwsGgm5axpJtfe4m55bEGJX9HLqvGf0lWSRywtGqylczWGq1pa0O1siNYl5FtpQZ+lvRxQVdJJBBTU9PK6xZNHBG0sLXA7WtBsQCCOaDvR6JVDcEdhUs7Xv6p8LZtUgBpvqXbt7INvABBoHdEofg7MOklaZopHyRVAabN1zdzS299Ui4IvtAO5BIsO0brBhMuG1VQyV7oZIWT6rgQx7C1uuD3i2+3eAN9yQgmHdEGLUzOrp8XfEy99SIzxtudp1WvAvkM+SC28BpJIKWGGaQyyMjYx8pJJkc0AF5LsySc80GegICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICD/2Q==" alt="PrymCare Health logo" width="40" height="40"><b>PrymCare Health</b></div>
-        <p>A Ghanaian wellness brand offering FDA-approved, aloe vera–rooted products and honest, personal guidance for your health goals.</p>
+        <p>A Ghanaian wellness brand offering FDA-approved, aloe vera-rooted products and honest, personal guidance for your health goals.</p>
       </div>
       <div>
         <h4>Explore</h4>
         <ul>
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About Us</a></li>
-          <li><a href="#products">Products</a></li>
+          <li><a href="#journey">How It Works</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#blog">Wellness Library</a></li>
+          <li><a href="#social">Follow Us</a></li>
           <li><a href="#partner">Become a Partner</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </div>
       <div>
-        <h4>Categories</h4>
+        <h4>Shop by Category</h4>
         <ul>
-          <li><a href="#categories">Nutritional Supplements</a></li>
-          <li><a href="#categories">Weight Management</a></li>
-          <li><a href="#categories">Skin &amp; Personal Care</a></li>
-          <li><a href="#categories">Cardio &amp; Bone Health</a></li>
+          <li><a href="shop.html?cat=nutrition">Nutritional Supplements</a></li>
+          <li><a href="shop.html?cat=weight">Weight Management</a></li>
+          <li><a href="shop.html?cat=skin">Skin Care</a></li>
+          <li><a href="shop.html?cat=personal">Personal Care</a></li>
+          <li><a href="shop.html?cat=bee">Bee Hive Products</a></li>
+          <li><a href="shop.html?cat=cardio">Cardio Health</a></li>
+          <li><a href="shop.html?cat=bone">Bone &amp; Joint Care</a></li>
+          <li><a href="shop.html?cat=eye">Optimum Eye Care</a></li>
+          <li><a href="shop.html?cat=energy">Energy &amp; Vitality</a></li>
+          <li><a href="shop.html?cat=fertility">Fertility &amp; Wellness</a></li>
+          <li><a href="shop.html?cat=drinks">Aloe Drinks</a></li>
+          <li><a href="shop.html?cat=programs">Wellness Programs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Popular Products</h4>
+        <ul>
+          <li><a href="shop.html?cat=skin">Pure Aloe Vera Gel</a></li>
+          <li><a href="shop.html?cat=nutrition">Daily Aloe Multivitamin</a></li>
+          <li><a href="shop.html?cat=cardio">CardioHealth with CoQ10</a></li>
+          <li><a href="shop.html?cat=bone">Freedom Joint Support</a></li>
+          <li><a href="shop.html?cat=energy">Active Energy Boost Drink</a></li>
+          <li><a href="shop.html">See the full 63-product range →</a></li>
         </ul>
       </div>
       <div>
@@ -1199,6 +1233,8 @@ footer a:hover{color:#fff;}
           <li><a href="mailto:prymcare@gmail.com">prymcare@gmail.com</a></li>
           <li><a href="https://wa.me/233544003712">+233 54 400 3712</a></li>
           <li><a href="#contact">Accra, Ghana</a></li>
+          <li><a href="https://www.instagram.com/prymcare" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/prymcare" target="_blank" rel="noopener">Facebook</a></li>
         </ul>
       </div>
     </div>
@@ -1323,34 +1359,6 @@ function setCookieChoice(choice){
   try{ document.cookie = 'prymcare_cookie_choice=' + choice + ';max-age=' + (60*60*24*180) + ';path=/'; }catch(e){}
   cookieBar.classList.remove('show');
 }
-
-/* Product filter + search */
-const filterBtns = document.querySelectorAll('.filter-btn');
-const searchInput = document.getElementById('productSearch');
-const prodCards = document.querySelectorAll('.prod-card');
-const noResults = document.getElementById('noResults');
-function applyProductFilter(){
-  const activeBtn = document.querySelector('.filter-btn.active');
-  const activeFilter = activeBtn ? activeBtn.dataset.filter : 'all';
-  const q = searchInput.value.trim().toLowerCase();
-  let visibleCount = 0;
-  prodCards.forEach(card => {
-    const cat = card.dataset.category;
-    const text = card.textContent.toLowerCase();
-    const matchCat = activeFilter === 'all' || cat === activeFilter;
-    const matchSearch = !q || text.includes(q);
-    const show = matchCat && matchSearch;
-    card.style.display = show ? '' : 'none';
-    if(show) visibleCount++;
-  });
-  noResults.classList.toggle('show', visibleCount === 0);
-}
-filterBtns.forEach(btn => btn.addEventListener('click', () => {
-  filterBtns.forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  applyProductFilter();
-}));
-if(searchInput){ searchInput.addEventListener('input', applyProductFilter); }
 
 /* Animated stat counters */
 const countEls = document.querySelectorAll('.count-up');
