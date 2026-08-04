@@ -41,7 +41,45 @@
   "category": "Bee Hive Products",
   "brand": {"@type": "Brand", "name": "Forever Living Products"},
   "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5", "reviewCount": "64"},
-  "offers": {"@type": "Offer", "priceCurrency": "GHS", "price": "324.00", "availability": "https://schema.org/InStock", "url": "https://www.prymcare.com/product/bee-honey.html"}
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "GHS",
+    "price": "324.00",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.prymcare.com/product/bee-honey.html",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0.00",
+        "currency": "GHS"
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "GH"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 1,
+          "unitCode": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 2,
+          "unitCode": "DAY"
+        }
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "GH",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+    }
+  }
 }
 </script>
 <script type="application/ld+json">
