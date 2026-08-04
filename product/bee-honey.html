@@ -51,7 +51,7 @@
       "@type": "OfferShippingDetails",
       "shippingRate": {
         "@type": "MonetaryAmount",
-        "value": "0.00",
+        "value": "30.00",
         "currency": "GHS"
       },
       "shippingDestination": {
@@ -68,8 +68,8 @@
         },
         "transitTime": {
           "@type": "QuantitativeValue",
-          "minValue": 0,
-          "maxValue": 2,
+          "minValue": 1,
+          "maxValue": 3,
           "unitCode": "DAY"
         }
       }
@@ -77,7 +77,11 @@
     "hasMerchantReturnPolicy": {
       "@type": "MerchantReturnPolicy",
       "applicableCountry": "GH",
-      "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 7,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/FreeReturn",
+      "refundType": "https://schema.org/FullRefund"
     }
   }
 }
