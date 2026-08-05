@@ -36,21 +36,25 @@
   /* Responsive safety net for homepage grids — mobile-first */
   .cat-grid, .prod-grid, .blog-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  @media (min-width: 480px) {
+    .prod-grid-featured { gap: 18px; }
   }
   @media (min-width: 560px) {
-    .cat-grid, .prod-grid, .blog-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .cat-grid, .blog-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  }
+  @media (min-width: 700px) {
+    .prod-grid-featured { grid-template-columns: repeat(4, 1fr); gap: 20px; }
   }
   @media (min-width: 900px) {
-    .cat-grid, .prod-grid { grid-template-columns: repeat(3, 1fr); }
+    .cat-grid { grid-template-columns: repeat(3, 1fr); }
     .blog-grid { grid-template-columns: repeat(3, 1fr); }
-  }
-  @media (min-width: 1200px) {
-    .prod-grid { grid-template-columns: repeat(6, 1fr); }
   }
   .prod-card, .cat-card { min-width: 0; }
   .prod-media img, .cat-card img { width: 100%; height: auto; display: block; }
+  .prod-card .prod-desc { font-size: 0.9em; line-height: 1.4; margin: 8px 0; opacity: 0.85; }
   .hero { overflow-x: hidden; }
   img { max-width: 100%; height: auto; }
 </style>
@@ -153,8 +157,8 @@
       "position": 4,
       "item": {
         "@type": "Product",
-        "name": "Forever Freedom",
-        "description": "A glucosamine-based drink for mobility and everyday joint comfort \u2014 genuine Forever Living stock, delivered across Ghana.",
+        "name": "Aloe Propolis Cr\u00e9me",
+        "description": "A cream with aloe vera, bee propolis, and camomile to deeply moisturize dry or rough skin and form a protective barrier. Sold genuine by PrymCare Health with delivery across Ghana.",
         "brand": {
           "@type": "Brand",
           "name": "Forever Living Products"
@@ -162,7 +166,7 @@
         "offers": {
           "@type": "Offer",
           "priceCurrency": "GHS",
-          "price": "675.74",
+          "price": "360.99",
           "availability": "https://schema.org/InStock",
           "url": "https://www.prymcare.com/shop.html"
         }
@@ -414,10 +418,10 @@
     <div class="container">
       <div class="section-head margin reveal">
         <span class="eyebrow">Customer favourites</span>
-        <h2>Genuine Forever Living products, ready to order.</h2>
-        <p>A snapshot of our full 63-product catalogue — every item shown here is exactly what arrives at your door.</p>
+        <h2>Our 4 best-loved products.</h2>
+        <p>The most reviewed picks from our full 63-product catalogue — every item shown here is exactly what arrives at your door.</p>
       </div>
-      <div class="prod-grid">
+      <div class="prod-grid prod-grid-featured">
         <div class="prod-card reveal">
           <div class="prod-media">
             <span class="prod-tag">Flagship</span>
@@ -427,6 +431,7 @@
             <a href="shop.html?cat=drinks" class="prod-cat-link">Aloe Drinks</a>
             <h3>Forever Aloe Vera Gel</h3>
             <div class="prod-stars">★★★★★ <span>(214)</span></div>
+            <p class="prod-desc">A stabilised drinking gel made from 99.7% inner-leaf pure aloe vera pulp, delivered across Ghana.</p>
             <div class="prod-price">₵471.94</div>
             <a href="shop.html?cat=drinks" class="btn btn-primary btn-sm" style="width:100%; margin-top:10px;">View in Shop</a>
           </div>
@@ -440,6 +445,7 @@
             <a href="shop.html?cat=nutrition" class="prod-cat-link">Nutritional Supplements</a>
             <h3>Forever Daily</h3>
             <div class="prod-stars">★★★★★ <span>(178)</span></div>
+            <p class="prod-desc">Essential vitamins and bio-available minerals to help fill nutritional gaps, delivered across Ghana.</p>
             <div class="prod-price">₵370.23</div>
             <a href="shop.html?cat=nutrition" class="btn btn-primary btn-sm" style="width:100%; margin-top:10px;">View in Shop</a>
           </div>
@@ -453,6 +459,7 @@
             <a href="shop.html?cat=cardio" class="prod-cat-link">Cardio Health</a>
             <h3>Forever Cardio Health</h3>
             <div class="prod-stars">★★★★★ <span>(133)</span></div>
+            <p class="prod-desc">A heart-supportive daily formula built around antioxidant CoQ10, delivered across Ghana.</p>
             <div class="prod-price">₵636.21</div>
             <a href="shop.html?cat=cardio" class="btn btn-primary btn-sm" style="width:100%; margin-top:10px;">View in Shop</a>
           </div>
@@ -466,34 +473,9 @@
             <a href="shop.html?cat=skin" class="prod-cat-link">Skin Care</a>
             <h3>Aloe Propolis Créme</h3>
             <div class="prod-stars">★★★★★ <span>(94)</span></div>
+            <p class="prod-desc">Aloe vera, bee propolis, and camomile to deeply moisturize dry skin, delivered across Ghana.</p>
             <div class="prod-price">₵360.99</div>
             <a href="shop.html?cat=skin" class="btn btn-primary btn-sm" style="width:100%; margin-top:10px;">View in Shop</a>
-          </div>
-        </div>
-        <div class="prod-card reveal">
-          <div class="prod-media">
-            <span class="prod-tag">Immunity</span>
-            <img src="assets/products/forever-royal-jelly.svg" alt="Forever Royal Jelly – Bee Hive Products | PrymCare Health" width="400" height="400" loading="lazy">
-          </div>
-          <div class="prod-body">
-            <a href="shop.html?cat=bee" class="prod-cat-link">Bee Hive Products</a>
-            <h3>Forever Royal Jelly</h3>
-            <div class="prod-stars">★★★★★ <span>(61)</span></div>
-            <div class="prod-price">₵601.58</div>
-            <a href="shop.html?cat=bee" class="btn btn-primary btn-sm" style="width:100%; margin-top:10px;">View in Shop</a>
-          </div>
-        </div>
-        <div class="prod-card reveal">
-          <div class="prod-media">
-            <span class="prod-tag">Bestseller</span>
-            <img src="assets/products/forever-c9-vanilla.svg" alt="C9 (Clean 9) Vanilla – Wellness Programs | PrymCare Health" width="400" height="400" loading="lazy">
-          </div>
-          <div class="prod-body">
-            <a href="shop.html?cat=programs" class="prod-cat-link">Wellness Programs</a>
-            <h3>C9 (Clean 9) Vanilla</h3>
-            <div class="prod-stars">★★★★★ <span>(87)</span></div>
-            <div class="prod-price">₵2230.64</div>
-            <a href="shop.html?cat=programs" class="btn btn-primary btn-sm" style="width:100%; margin-top:10px;">View in Shop</a>
           </div>
         </div>
       </div>
