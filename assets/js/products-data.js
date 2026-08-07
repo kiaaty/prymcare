@@ -63,4 +63,4 @@ const ALL_PRODUCTS = [
 {id:"immune-pack-booster", name:"Infec Relief Pack (Booster)", price:7191.22, img:"immune-pack-booster"},
 {id:"immune-pack-turbo", name:"Infec Relief Pack (Turbo)", price:2466.57, img:"immune-pack-turbo"},
 {id:"prostawell-pack", name:"ProstaWell Pack", price:1800.00, img:"prostawell-pack"}
-];
+]; 
