@@ -394,4 +394,4 @@ var catParam = urlParams.get('cat');
 if (catParam) { setFilter(catParam); } else { applyProductFilter(); }
 })();
 }
-});
+}); 
