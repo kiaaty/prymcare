@@ -30,7 +30,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all';this.onload=null;">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap"></noscript>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.prymcare.com/"},{"@type":"ListItem","position":2,"name":"Shop","item":"https://www.prymcare.com/shop.html"},{"@type":"ListItem","position":3,"name":"Cardio Health","item":"https://www.prymcare.com/shop/cardio-health.html"}]}
 </script>
@@ -63,7 +65,7 @@
   .filter-btn { flex: 0 0 auto; white-space: nowrap; }
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ItemList","name":"PrymCare Health \u2013 Cardio Health","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Garlic Thyme","description":"A traditional herbal pairing for healthy circulation, without the garlic breath.","category":"Cardio Health","image":"https://www.prymcare.com/assets/products/forever-garlic-thyme.svg","url":"https://www.prymcare.com/product/garlic-thyme.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"342.49","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/garlic-thyme.html"}}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Forever Cardio Health","description":"CoQ10-powered daily support for your heart's natural energy production.","category":"Cardio Health","image":"https://www.prymcare.com/assets/products/forever-cardio-health.svg","url":"https://www.prymcare.com/product/cardio-health.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"636.21","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/cardio-health.html"}}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Forever Arctic Sea","description":"Omega-3 fish oil for heart and joint health \u2014 one of nature's best-studied nutrients.","category":"Cardio Health","image":"https://www.prymcare.com/assets/products/forever-arctic-sea.svg","url":"https://www.prymcare.com/product/arctic-sea.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"574.04","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/arctic-sea.html"}}}]}
+{"@context":"https://schema.org","@type":"ItemList","name":"PrymCare Health Cardio Health Products","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Garlic Thyme","url":"https://www.prymcare.com/product/garlic-thyme.html","offers":{"@type":"Offer","price":"342.49","priceCurrency":"GHS"}}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Forever Cardio Health","url":"https://www.prymcare.com/product/cardio-health.html","offers":{"@type":"Offer","price":"636.21","priceCurrency":"GHS"}}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Forever Arctic Sea","url":"https://www.prymcare.com/product/arctic-sea.html","offers":{"@type":"Offer","price":"574.04","priceCurrency":"GHS"}}},{"@type":"ListItem","position":4,"item":{"@type":"Product","name":"Cardiac Detox Pack (Starter)","url":"https://www.prymcare.com/product/cardiac-pack-starter.html","offers":{"@type":"Offer","price":"600.94","priceCurrency":"GHS"}}},{"@type":"ListItem","position":5,"item":{"@type":"Product","name":"Cardiac Detox Pack (Booster)","url":"https://www.prymcare.com/product/cardiac-pack-booster.html","offers":{"@type":"Offer","price":"2711.83","priceCurrency":"GHS"}}},{"@type":"ListItem","position":6,"item":{"@type":"Product","name":"Cardiac Detox Pack (Turbo)","url":"https://www.prymcare.com/product/cardiac-pack-turbo.html","offers":{"@type":"Offer","price":"2711.83","priceCurrency":"GHS"}}},{"@type":"ListItem","position":7,"item":{"@type":"Product","name":"CARDOX PACK","url":"https://www.prymcare.com/product/cardox-pack.html","offers":{"@type":"Offer","price":"4500","priceCurrency":"GHS"}}}]}
 </script>
 </head>
 <body>
@@ -233,6 +235,62 @@
             </button>
           </div>
         </div>
+        <div class="prod-card reveal" data-id="cardiac-pack-starter" data-href="../product/cardiac-pack-starter.html" data-cat="cardio" data-price="600.94" data-rating="0" data-reviews="0">
+        <div class="prod-media">
+          
+          <img src="../assets/products/cardiac-pack-starter.svg" alt="Cardiac Detox Pack (Starter) – Cardio Health | PrymCare Health" width="400" height="400" loading="lazy">
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat-link" style="pointer-events:none;">Cardio Health</span>
+          <h3>Cardiac Detox Pack (Starter)</h3>
+          <div class="prod-brand">by Forever Living Products</div>
+          <div class="prod-stars new-arrival">New arrival</div>
+          <p class="prod-desc">A curated Forever Living pack put together to support heart health and healthy circulation as part of your daily routine.</p>
+          <div class="prod-price">₵600.94</div>
+        </div>
+      </div>
+        <div class="prod-card reveal" data-id="cardiac-pack-booster" data-href="../product/cardiac-pack-booster.html" data-cat="cardio" data-price="2711.83" data-rating="0" data-reviews="0">
+        <div class="prod-media">
+          
+          <img src="../assets/products/cardiac-pack-booster.svg" alt="Cardiac Detox Pack (Booster) – Cardio Health | PrymCare Health" width="400" height="400" loading="lazy">
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat-link" style="pointer-events:none;">Cardio Health</span>
+          <h3>Cardiac Detox Pack (Booster)</h3>
+          <div class="prod-brand">by Forever Living Products</div>
+          <div class="prod-stars new-arrival">New arrival</div>
+          <p class="prod-desc">A curated Forever Living pack put together to support heart health and healthy circulation as part of your daily routine.</p>
+          <div class="prod-price">₵2,711.83</div>
+        </div>
+      </div>
+        <div class="prod-card reveal" data-id="cardiac-pack-turbo" data-href="../product/cardiac-pack-turbo.html" data-cat="cardio" data-price="2711.83" data-rating="0" data-reviews="0">
+        <div class="prod-media">
+          
+          <img src="../assets/products/cardiac-pack-turbo.svg" alt="Cardiac Detox Pack (Turbo) – Cardio Health | PrymCare Health" width="400" height="400" loading="lazy">
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat-link" style="pointer-events:none;">Cardio Health</span>
+          <h3>Cardiac Detox Pack (Turbo)</h3>
+          <div class="prod-brand">by Forever Living Products</div>
+          <div class="prod-stars new-arrival">New arrival</div>
+          <p class="prod-desc">A curated Forever Living pack put together to support heart health and healthy circulation as part of your daily routine.</p>
+          <div class="prod-price">₵2,711.83</div>
+        </div>
+        <div class="prod-card reveal" data-id="cardox-pack" data-href="../product/cardox-pack.html" data-cat="cardio" data-price="4500" data-rating="0" data-reviews="0">
+        <div class="prod-media">
+          
+          <img src="../assets/products/cardox-pack.svg" alt="CARDOX PACK – Cardio Health | PrymCare Health" width="400" height="400" loading="lazy">
+        </div>
+        <div class="prod-body">
+          <span class="prod-cat-link" style="pointer-events:none;">Cardio Health</span>
+          <h3>CARDOX PACK</h3>
+          <div class="prod-brand">by Forever Living Products</div>
+          <div class="prod-stars new-arrival">New arrival</div>
+          <p class="prod-desc">A premium Omega-3 and CoQ10 duo curated to support heart function, healthy circulation, and everyday energy.</p>
+          <div class="prod-price">₵4,500.00</div>
+        </div>
+      </div>
+      </div>
       </div>
       </div>
     </div>
@@ -374,8 +432,8 @@
 
 <div class="toast" id="toast"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span id="toastMsg">Added to cart</span></div>
 
-<script src="../assets/js/products-data.js"></script>
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/products-data.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
 
 </body>
 </html>
