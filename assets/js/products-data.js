@@ -53,13 +53,14 @@ const ALL_PRODUCTS = [
 {id:"vital5-freedom", name:"Vital 5 with Forever Freedom", price:4627.71, img:"forever-vital5-freedom"},
 {id:"c9-vanilla", name:"C9 (Clean 9) Vanilla", price:2230.64, img:"forever-c9-vanilla"},
 {id:"cardox-pack", name:"CARDOX PACK", price:4500, img:"cardox-pack"},
-{id:"cardiac-pack-starter", name:"Cardiac Pack (Starter)", price:600.94, img:"cardiac-pack-starter"},
-{id:"cardiac-pack-booster", name:"Cardiac Pack (Booster)", price:2711.83, img:"cardiac-pack-booster"},
-{id:"cardiac-pack-turbo", name:"Cardiac Pack (Turbo)", price:2711.83, img:"cardiac-pack-turbo"},
-{id:"liver-pack-starter", name:"Liver Pack (Starter)", price:2711.83, img:"liver-pack-starter"},
-{id:"liver-pack-booster", name:"Liver Pack (Booster)", price:2711.83, img:"liver-pack-booster"},
-{id:"liver-pack-turbo", name:"Liver Pack (Turbo)", price:2711.83, img:"liver-pack-turbo"},
-{id:"immune-pack-starter", name:"Immune Pack (Starter)", price:2230.64, img:"immune-pack-starter"},
-{id:"immune-pack-booster", name:"Immune Pack (Booster)", price:7191.22, img:"immune-pack-booster"},
-{id:"immune-pack-turbo", name:"Immune Pack (Turbo)", price:2466.57, img:"immune-pack-turbo"}
-]; 
+{id:"cardiac-pack-starter", name:"Cardiac Detox Pack (Starter)", price:600.94, img:"cardiac-pack-starter"},
+{id:"cardiac-pack-booster", name:"Cardiac Detox Pack (Booster)", price:2711.83, img:"cardiac-pack-booster"},
+{id:"cardiac-pack-turbo", name:"Cardiac Detox Pack (Turbo)", price:2711.83, img:"cardiac-pack-turbo"},
+{id:"liver-pack-starter", name:"Liver Detox Pack (Starter)", price:2711.83, img:"liver-pack-starter"},
+{id:"liver-pack-booster", name:"Liver Detox Pack (Booster)", price:2711.83, img:"liver-pack-booster"},
+{id:"liver-pack-turbo", name:"Liver Detox Pack (Turbo)", price:2711.83, img:"liver-pack-turbo"},
+{id:"immune-pack-starter", name:"Infec Relief Pack (Starter)", price:2230.64, img:"immune-pack-starter"},
+{id:"immune-pack-booster", name:"Infec Relief Pack (Booster)", price:7191.22, img:"immune-pack-booster"},
+{id:"immune-pack-turbo", name:"Infec Relief Pack (Turbo)", price:2466.57, img:"immune-pack-turbo"},
+{id:"prostawell-pack", name:"ProstaWell Pack", price:1800.00, img:"prostawell-pack"}
+];
