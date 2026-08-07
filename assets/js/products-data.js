@@ -61,4 +61,4 @@ const ALL_PRODUCTS = [
 {id:"c9-vanilla", name:"C9 (Clean 9) Vanilla", price:2230.64, img:"forever-c9-vanilla"},
 {id:"c9-chocolate", name:"C9 (Clean 9) Chocolate", price:7191.22, img:"forever-c9-chocolate"},
 {id:"start-journey", name:"Start Your Journey Pack", price:2466.57, img:"forever-start-journey"}
-];
+]; 
