@@ -30,7 +30,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all';this.onload=null;">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap"></noscript>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.prymcare.com/"},{"@type":"ListItem","position":2,"name":"Shop","item":"https://www.prymcare.com/shop.html"},{"@type":"ListItem","position":3,"name":"Bee Hive Products","item":"https://www.prymcare.com/shop/bee-hive.html"}]}
 </script>
@@ -63,7 +65,169 @@
   .filter-btn { flex: 0 0 auto; white-space: nowrap; }
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ItemList","name":"PrymCare Health \u2013 Bee Hive Products","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Forever Bee Honey","description":"Pure, raw honey harvested close to the hive. Real honey flavor, genuine Forever Living stock.","category":"Bee Hive Products","image":"https://www.prymcare.com/assets/products/forever-bee-honey.svg","url":"https://www.prymcare.com/product/bee-honey.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"324.00","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/bee-honey.html"}}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Forever Bee Pollen","description":"A nutrient-dense hive extract for everyday vitality \u2014 simple, natural, effective.","category":"Bee Hive Products","image":"https://www.prymcare.com/assets/products/forever-bee-pollen.svg","url":"https://www.prymcare.com/product/bee-pollen.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"277.58","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/bee-pollen.html"}}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Forever Bee Propolis","description":"The resin bees use to protect their hive, now supporting your everyday immune resilience.","category":"Bee Hive Products","image":"https://www.prymcare.com/assets/products/forever-bee-propolis.svg","url":"https://www.prymcare.com/product/bee-propolis.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"596.96","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/bee-propolis.html"}}},{"@type":"ListItem","position":4,"item":{"@type":"Product","name":"Forever Royal Jelly","description":"Concentrated royal jelly and propolis. A serious daily boost for your body's defenses.","category":"Bee Hive Products","image":"https://www.prymcare.com/assets/products/forever-royal-jelly.svg","url":"https://www.prymcare.com/product/royal-jelly.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"601.58","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/royal-jelly.html"}}}]}
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "PrymCare Health \u2013 Bee Hive Products",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Forever Bee Honey",
+        "description": "Pure, raw honey harvested close to the hive. Real honey flavor, genuine Forever Living stock.",
+        "category": "Bee Hive Products",
+        "image": "https://www.prymcare.com/assets/products/forever-bee-honey.svg",
+        "url": "https://www.prymcare.com/product/bee-honey.html",
+        "brand": {
+          "@type": "Brand",
+          "name": "Forever Living Products"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GHS",
+          "price": "324.00",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.prymcare.com/product/bee-honey.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "64"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Forever Bee Pollen",
+        "description": "A nutrient-dense hive extract for everyday vitality \u2014 simple, natural, effective.",
+        "category": "Bee Hive Products",
+        "image": "https://www.prymcare.com/assets/products/forever-bee-pollen.svg",
+        "url": "https://www.prymcare.com/product/bee-pollen.html",
+        "brand": {
+          "@type": "Brand",
+          "name": "Forever Living Products"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GHS",
+          "price": "277.58",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.prymcare.com/product/bee-pollen.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4",
+          "reviewCount": "33"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "Forever Bee Propolis",
+        "description": "The resin bees use to protect their hive, now supporting your everyday immune resilience.",
+        "category": "Bee Hive Products",
+        "image": "https://www.prymcare.com/assets/products/forever-bee-propolis.svg",
+        "url": "https://www.prymcare.com/product/bee-propolis.html",
+        "brand": {
+          "@type": "Brand",
+          "name": "Forever Living Products"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GHS",
+          "price": "596.96",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.prymcare.com/product/bee-propolis.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4",
+          "reviewCount": "27"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Product",
+        "name": "Forever Royal Jelly",
+        "description": "Concentrated royal jelly and propolis. A serious daily boost for your body's defenses.",
+        "category": "Bee Hive Products",
+        "image": "https://www.prymcare.com/assets/products/forever-royal-jelly.svg",
+        "url": "https://www.prymcare.com/product/royal-jelly.html",
+        "brand": {
+          "@type": "Brand",
+          "name": "Forever Living Products"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GHS",
+          "price": "601.58",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.prymcare.com/product/royal-jelly.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "61"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    }
+  ]
+}
 </script>
 </head>
 <body>
@@ -399,8 +563,8 @@
 
 <div class="toast" id="toast"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span id="toastMsg">Added to cart</span></div>
 
-<script src="../assets/js/products-data.js"></script>
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/products-data.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
 
 </body>
 </html>
