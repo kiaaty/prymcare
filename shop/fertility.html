@@ -30,7 +30,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all';this.onload=null;">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap"></noscript>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.prymcare.com/"},{"@type":"ListItem","position":2,"name":"Shop","item":"https://www.prymcare.com/shop.html"},{"@type":"ListItem","position":3,"name":"Fertility & Wellness","item":"https://www.prymcare.com/shop/fertility.html"}]}
 </script>
@@ -63,7 +65,130 @@
   .filter-btn { flex: 0 0 auto; white-space: nowrap; }
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ItemList","name":"PrymCare Health \u2013 Fertility & Wellness","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Forever Multi-Maca","description":"Peruvian maca root and traditional herbs for energy, stamina, and vitality.","category":"Fertility &amp; Wellness","image":"https://www.prymcare.com/assets/products/forever-multi-maca.svg","url":"https://www.prymcare.com/product/multi-maca.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"495.25","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/multi-maca.html"}}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Forever Vitolize (Men)","description":"A daily formula built specifically for men's vitality and reproductive health.","category":"Fertility &amp; Wellness","image":"https://www.prymcare.com/assets/products/forever-vitolize-men.svg","url":"https://www.prymcare.com/product/vitolize-men.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"574.04","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/vitolize-men.html"}}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Forever Vitolize (Women)","description":"A daily formula built specifically for women's hormonal and reproductive health.","category":"Fertility &amp; Wellness","image":"https://www.prymcare.com/assets/products/forever-vitolize-women.svg","url":"https://www.prymcare.com/product/vitolize-women.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"587.71","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/vitolize-women.html"}}}]}
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "PrymCare Health \u2013 Fertility & Wellness",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Forever Multi-Maca",
+        "description": "Peruvian maca root and traditional herbs for energy, stamina, and vitality.",
+        "category": "Fertility &amp; Wellness",
+        "image": "https://www.prymcare.com/assets/products/forever-multi-maca.svg",
+        "url": "https://www.prymcare.com/product/multi-maca.html",
+        "brand": {
+          "@type": "Brand",
+          "name": "Forever Living Products"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GHS",
+          "price": "495.25",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.prymcare.com/product/multi-maca.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4",
+          "reviewCount": "39"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Forever Vitolize (Men)",
+        "description": "A daily formula built specifically for men's vitality and reproductive health.",
+        "category": "Fertility &amp; Wellness",
+        "image": "https://www.prymcare.com/assets/products/forever-vitolize-men.svg",
+        "url": "https://www.prymcare.com/product/vitolize-men.html",
+        "brand": {
+          "@type": "Brand",
+          "name": "Forever Living Products"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GHS",
+          "price": "574.04",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.prymcare.com/product/vitolize-men.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4",
+          "reviewCount": "26"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "Forever Vitolize (Women)",
+        "description": "A daily formula built specifically for women's hormonal and reproductive health.",
+        "category": "Fertility &amp; Wellness",
+        "image": "https://www.prymcare.com/assets/products/forever-vitolize-women.svg",
+        "url": "https://www.prymcare.com/product/vitolize-women.html",
+        "brand": {
+          "@type": "Brand",
+          "name": "Forever Living Products"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GHS",
+          "price": "587.71",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.prymcare.com/product/vitolize-women.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4",
+          "reviewCount": "31"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    }
+  ]
+}
 </script>
 </head>
 <body>
@@ -374,8 +499,8 @@
 
 <div class="toast" id="toast"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span id="toastMsg">Added to cart</span></div>
 
-<script src="../assets/js/products-data.js"></script>
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/products-data.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
 
 </body>
 </html>
