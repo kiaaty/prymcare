@@ -30,7 +30,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all';this.onload=null;">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap"></noscript>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.prymcare.com/"},{"@type":"ListItem","position":2,"name":"Shop","item":"https://www.prymcare.com/shop.html"},{"@type":"ListItem","position":3,"name":"Personal Care","item":"https://www.prymcare.com/shop/personal-care.html"}]}
 </script>
@@ -63,7 +65,247 @@
   .filter-btn { flex: 0 0 auto; white-space: nowrap; }
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ItemList","name":"PrymCare Health \u2013 Personal Care","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Aloe Lips","description":"Pocket-sized aloe lip balm. Soothing relief for dry lips, any time of day.","category":"Personal Care","image":"https://www.prymcare.com/assets/products/forever-aloe-lips.svg","url":"https://www.prymcare.com/product/aloe-lips.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"64.72","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/aloe-lips.html"}}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Forever Bright Toothgel","description":"Fluoride-free, aloe-based toothgel for a gentler daily brush.","category":"Personal Care","image":"https://www.prymcare.com/assets/products/forever-bright-toothgel.svg","url":"https://www.prymcare.com/product/bright-toothgel.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"143.51","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/bright-toothgel.html"}}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Aloe Ever-Shield Deodorant","description":"Aluminium-conscious deodorant with soothing aloe vera \u2014 freshness without the harsh stuff.","category":"Personal Care","image":"https://www.prymcare.com/assets/products/forever-ever-shield.svg","url":"https://www.prymcare.com/product/ever-shield.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"134.26","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/ever-shield.html"}}},{"@type":"ListItem","position":4,"item":{"@type":"Product","name":"Gentlemen&#x27;s Pride","description":"Aloe-based aftershave that calms and refreshes skin post-shave, without the sting.","category":"Personal Care","image":"https://www.prymcare.com/assets/products/forever-gentlemens-pride.svg","url":"https://www.prymcare.com/product/gentlemens-pride.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"277.58","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/gentlemens-pride.html"}}},{"@type":"ListItem","position":5,"item":{"@type":"Product","name":"Forever Hand Sanitizer","description":"Aloe-enriched hand sanitizer that cleans without drying out your hands.","category":"Personal Care","image":"https://www.prymcare.com/assets/products/forever-hand-sanitizer.svg","url":"https://www.prymcare.com/product/hand-sanitizer.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"78.59","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/hand-sanitizer.html"}}},{"@type":"ListItem","position":6,"item":{"@type":"Product","name":"Aloe Liquid Soap","description":"Concentrated aloe hand and body wash. Cleans thoroughly, skin stays soft.","category":"Personal Care","image":"https://www.prymcare.com/assets/products/forever-aloe-liquid-soap.svg","url":"https://www.prymcare.com/product/aloe-liquid-soap.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"346.73","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/aloe-liquid-soap.html"}}}]}
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "PrymCare Health \u2013 Personal Care",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Aloe Lips",
+        "description": "Pocket-sized aloe lip balm. Soothing relief for dry lips, any time of day.",
+        "category": "Personal Care",
+        "image": "https://www.prymcare.com/assets/products/forever-aloe-lips.svg",
+        "url": "https://www.prymcare.com/product/aloe-lips.html",
+        "brand": {
+          "@type": "Brand",
+          "name": "Forever Living Products"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GHS",
+          "price": "64.72",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.prymcare.com/product/aloe-lips.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "126"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Forever Bright Toothgel",
+        "description": "Fluoride-free, aloe-based toothgel for a gentler daily brush.",
+        "category": "Personal Care",
+        "image": "https://www.prymcare.com/assets/products/forever-bright-toothgel.svg",
+        "url": "https://www.prymcare.com/product/bright-toothgel.html",
+        "brand": {
+          "@type": "Brand",
+          "name": "Forever Living Products"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GHS",
+          "price": "143.51",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.prymcare.com/product/bright-toothgel.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4",
+          "reviewCount": "88"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "Aloe Ever-Shield Deodorant",
+        "description": "Aluminium-conscious deodorant with soothing aloe vera \u2014 freshness without the harsh stuff.",
+        "category": "Personal Care",
+        "image": "https://www.prymcare.com/assets/products/forever-ever-shield.svg",
+        "url": "https://www.prymcare.com/product/ever-shield.html",
+        "brand": {
+          "@type": "Brand",
+          "name": "Forever Living Products"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GHS",
+          "price": "134.26",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.prymcare.com/product/ever-shield.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4",
+          "reviewCount": "41"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Product",
+        "name": "Gentlemen&#x27;s Pride",
+        "description": "Aloe-based aftershave that calms and refreshes skin post-shave, without the sting.",
+        "category": "Personal Care",
+        "image": "https://www.prymcare.com/assets/products/forever-gentlemens-pride.svg",
+        "url": "https://www.prymcare.com/product/gentlemens-pride.html",
+        "brand": {
+          "@type": "Brand",
+          "name": "Forever Living Products"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GHS",
+          "price": "277.58",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.prymcare.com/product/gentlemens-pride.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4",
+          "reviewCount": "27"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Product",
+        "name": "Forever Hand Sanitizer",
+        "description": "Aloe-enriched hand sanitizer that cleans without drying out your hands.",
+        "category": "Personal Care",
+        "image": "https://www.prymcare.com/assets/products/forever-hand-sanitizer.svg",
+        "url": "https://www.prymcare.com/product/hand-sanitizer.html",
+        "brand": {
+          "@type": "Brand",
+          "name": "Forever Living Products"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GHS",
+          "price": "78.59",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.prymcare.com/product/hand-sanitizer.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "64"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "Product",
+        "name": "Aloe Liquid Soap",
+        "description": "Concentrated aloe hand and body wash. Cleans thoroughly, skin stays soft.",
+        "category": "Personal Care",
+        "image": "https://www.prymcare.com/assets/products/forever-aloe-liquid-soap.svg",
+        "url": "https://www.prymcare.com/product/aloe-liquid-soap.html",
+        "brand": {
+          "@type": "Brand",
+          "name": "Forever Living Products"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GHS",
+          "price": "346.73",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.prymcare.com/product/aloe-liquid-soap.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "37"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    }
+  ]
+}
 </script>
 </head>
 <body>
@@ -449,8 +691,8 @@
 
 <div class="toast" id="toast"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span id="toastMsg">Added to cart</span></div>
 
-<script src="../assets/js/products-data.js"></script>
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/products-data.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
 
 </body>
 </html>
