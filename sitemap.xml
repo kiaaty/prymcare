@@ -61,7 +61,67 @@
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/absorbent-c.html</loc>
+    <loc>https://www.prymcare.com/shop/nutrition.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.prymcare.com/shop/weight-management.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.prymcare.com/shop/skin-care.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.prymcare.com/shop/personal-care.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.prymcare.com/shop/bee-hive.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.prymcare.com/shop/cardio-health.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.prymcare.com/shop/bone-joint.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.prymcare.com/shop/eye-care.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.prymcare.com/shop/energy-vitality.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.prymcare.com/shop/fertility.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.prymcare.com/shop/aloe-drinks.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.prymcare.com/shop/wellness-programs.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.prymcare.com/product/absorbent-c.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -70,7 +130,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/fields-of-greens.html</loc>
+    <loc>https://www.prymcare.com/product/fields-of-greens.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -79,7 +139,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/lycium-plus.html</loc>
+    <loc>https://www.prymcare.com/product/lycium-plus.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -88,7 +148,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/forever-kids.html</loc>
+    <loc>https://www.prymcare.com/product/forever-kids.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -97,7 +157,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/immublend.html</loc>
+    <loc>https://www.prymcare.com/product/immublend.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -106,7 +166,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/forever-daily.html</loc>
+    <loc>https://www.prymcare.com/product/forever-daily.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -115,7 +175,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/active-pro-b.html</loc>
+    <loc>https://www.prymcare.com/product/active-pro-b.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -124,7 +184,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/supergreens.html</loc>
+    <loc>https://www.prymcare.com/product/supergreens.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -133,7 +193,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/nature-min.html</loc>
+    <loc>https://www.prymcare.com/product/nature-min.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -142,7 +202,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/garcinia-plus.html</loc>
+    <loc>https://www.prymcare.com/product/garcinia-plus.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -151,7 +211,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/lite-ultra-vanilla.html</loc>
+    <loc>https://www.prymcare.com/product/lite-ultra-vanilla.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -160,7 +220,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/lite-ultra-chocolate.html</loc>
+    <loc>https://www.prymcare.com/product/lite-ultra-chocolate.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -169,7 +229,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/fast-break.html</loc>
+    <loc>https://www.prymcare.com/product/fast-break.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -178,7 +238,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/aloe-propolis-creme.html</loc>
+    <loc>https://www.prymcare.com/product/aloe-propolis-creme.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -187,7 +247,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/aloe-vera-gelly.html</loc>
+    <loc>https://www.prymcare.com/product/aloe-vera-gelly.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -196,7 +256,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/aloe-moisturizing-lotion.html</loc>
+    <loc>https://www.prymcare.com/product/aloe-moisturizing-lotion.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -205,7 +265,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/avocado-soap.html</loc>
+    <loc>https://www.prymcare.com/product/avocado-soap.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -214,7 +274,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/aloe-body-lotion.html</loc>
+    <loc>https://www.prymcare.com/product/aloe-body-lotion.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -223,16 +283,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/renewing-skin-creme.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-    <image:image>
-      <image:loc>https://www.prymcare.com/assets/products/forever-renewing-skin-creme.svg</image:loc>
-      <image:title>Renewing Skin Créme</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.prymcare.com/products/aloe-lips.html</loc>
+    <loc>https://www.prymcare.com/product/aloe-lips.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -241,7 +292,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/bright-toothgel.html</loc>
+    <loc>https://www.prymcare.com/product/bright-toothgel.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -250,7 +301,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/ever-shield.html</loc>
+    <loc>https://www.prymcare.com/product/ever-shield.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -259,7 +310,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/gentlemens-pride.html</loc>
+    <loc>https://www.prymcare.com/product/gentlemens-pride.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -268,7 +319,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/hand-sanitizer.html</loc>
+    <loc>https://www.prymcare.com/product/hand-sanitizer.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -277,7 +328,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/aloe-liquid-soap.html</loc>
+    <loc>https://www.prymcare.com/product/aloe-liquid-soap.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -286,7 +337,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/bee-honey.html</loc>
+    <loc>https://www.prymcare.com/product/bee-honey.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -295,7 +346,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/bee-pollen.html</loc>
+    <loc>https://www.prymcare.com/product/bee-pollen.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -304,7 +355,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/bee-propolis.html</loc>
+    <loc>https://www.prymcare.com/product/bee-propolis.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -313,7 +364,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/royal-jelly.html</loc>
+    <loc>https://www.prymcare.com/product/royal-jelly.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -322,7 +373,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/garlic-thyme.html</loc>
+    <loc>https://www.prymcare.com/product/garlic-thyme.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -331,7 +382,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/cardio-health.html</loc>
+    <loc>https://www.prymcare.com/product/cardio-health.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -340,7 +391,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/arctic-sea.html</loc>
+    <loc>https://www.prymcare.com/product/arctic-sea.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -349,7 +400,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/forever-calcium.html</loc>
+    <loc>https://www.prymcare.com/product/forever-calcium.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -358,7 +409,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/active-ha.html</loc>
+    <loc>https://www.prymcare.com/product/active-ha.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -367,7 +418,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/forever-move.html</loc>
+    <loc>https://www.prymcare.com/product/forever-move.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -376,7 +427,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/aloe-heat-lotion.html</loc>
+    <loc>https://www.prymcare.com/product/aloe-heat-lotion.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -385,7 +436,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/forever-freedom.html</loc>
+    <loc>https://www.prymcare.com/product/forever-freedom.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -394,7 +445,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/ivision.html</loc>
+    <loc>https://www.prymcare.com/product/ivision.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -403,7 +454,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/b12-plus.html</loc>
+    <loc>https://www.prymcare.com/product/b12-plus.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -412,7 +463,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/argi-sticks.html</loc>
+    <loc>https://www.prymcare.com/product/argi-sticks.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -421,7 +472,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/forever-focus.html</loc>
+    <loc>https://www.prymcare.com/product/forever-focus.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -430,7 +481,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/fab-drink.html</loc>
+    <loc>https://www.prymcare.com/product/fab-drink.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -439,7 +490,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/multi-maca.html</loc>
+    <loc>https://www.prymcare.com/product/multi-maca.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -448,7 +499,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/vitolize-men.html</loc>
+    <loc>https://www.prymcare.com/product/vitolize-men.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -457,7 +508,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/vitolize-women.html</loc>
+    <loc>https://www.prymcare.com/product/vitolize-women.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -466,7 +517,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/aloe-vera-gel.html</loc>
+    <loc>https://www.prymcare.com/product/aloe-vera-gel.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -475,7 +526,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/aloe-berry-nectar.html</loc>
+    <loc>https://www.prymcare.com/product/aloe-berry-nectar.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -484,7 +535,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/blossom-tea.html</loc>
+    <loc>https://www.prymcare.com/product/blossom-tea.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -493,7 +544,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/aloe-gel-mini.html</loc>
+    <loc>https://www.prymcare.com/product/aloe-gel-mini.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -502,7 +553,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/vital5-gel.html</loc>
+    <loc>https://www.prymcare.com/product/vital5-gel.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -511,7 +562,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/vital5-nectar.html</loc>
+    <loc>https://www.prymcare.com/product/vital5-nectar.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -520,7 +571,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/vital5-bnp.html</loc>
+    <loc>https://www.prymcare.com/product/vital5-bnp.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -529,7 +580,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/vital5-freedom.html</loc>
+    <loc>https://www.prymcare.com/product/vital5-freedom.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -538,61 +589,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/f15-beginner-vanilla.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-    <image:image>
-      <image:loc>https://www.prymcare.com/assets/products/forever-f15-beginner-vanilla.svg</image:loc>
-      <image:title>F15 Beginner Pack (Vanilla)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.prymcare.com/products/f15-beginner-chocolate.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-    <image:image>
-      <image:loc>https://www.prymcare.com/assets/products/forever-f15-beginner-chocolate.svg</image:loc>
-      <image:title>F15 Beginner Pack (Chocolate)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.prymcare.com/products/f15-intermediate-vanilla.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-    <image:image>
-      <image:loc>https://www.prymcare.com/assets/products/forever-f15-intermediate-vanilla.svg</image:loc>
-      <image:title>F15 Intermediate Pack (Vanilla)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.prymcare.com/products/f15-intermediate-chocolate.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-    <image:image>
-      <image:loc>https://www.prymcare.com/assets/products/forever-f15-intermediate-chocolate.svg</image:loc>
-      <image:title>F15 Intermediate Pack (Chocolate)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.prymcare.com/products/f15-advance-vanilla.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-    <image:image>
-      <image:loc>https://www.prymcare.com/assets/products/forever-f15-advance-vanilla.svg</image:loc>
-      <image:title>F15 Advanced Pack (Vanilla)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.prymcare.com/products/f15-advance-chocolate.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-    <image:image>
-      <image:loc>https://www.prymcare.com/assets/products/f15-advance-chocolate.svg</image:loc>
-      <image:title>F15 Advanced Pack (Chocolate)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.prymcare.com/products/c9-vanilla.html</loc>
+    <loc>https://www.prymcare.com/product/c9-vanilla.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
@@ -601,30 +598,111 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/c9-chocolate.html</loc>
+    <loc>https://www.prymcare.com/product/cardox-pack.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
-      <image:loc>https://www.prymcare.com/assets/products/forever-c9-chocolate.svg</image:loc>
-      <image:title>C9 (Clean 9) Chocolate</image:title>
+      <image:loc>https://www.prymcare.com/assets/products/cardox-pack.svg</image:loc>
+      <image:title>CARDOX PACK</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/start-journey.html</loc>
+    <loc>https://www.prymcare.com/product/cardiac-pack-starter.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
-      <image:loc>https://www.prymcare.com/assets/products/forever-start-journey.svg</image:loc>
-      <image:title>Start Your Journey Pack</image:title>
+      <image:loc>https://www.prymcare.com/assets/products/cardiac-pack-starter.svg</image:loc>
+      <image:title>Cardiac Detox Pack (Starter)</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://www.prymcare.com/products/dx4.html</loc>
+    <loc>https://www.prymcare.com/product/cardiac-pack-booster.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <image:image>
-      <image:loc>https://www.prymcare.com/assets/products/forever-dx4.svg</image:loc>
-      <image:title>DX4</image:title>
+      <image:loc>https://www.prymcare.com/assets/products/cardiac-pack-booster.svg</image:loc>
+      <image:title>Cardiac Detox Pack (Booster)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.prymcare.com/product/cardiac-pack-turbo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://www.prymcare.com/assets/products/cardiac-pack-turbo.svg</image:loc>
+      <image:title>Cardiac Detox Pack (Turbo)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.prymcare.com/product/liver-pack-starter.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://www.prymcare.com/assets/products/liver-pack-starter.svg</image:loc>
+      <image:title>Liver Detox Pack (Starter)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.prymcare.com/product/liver-pack-booster.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://www.prymcare.com/assets/products/liver-pack-booster.svg</image:loc>
+      <image:title>Liver Detox Pack (Booster)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.prymcare.com/product/liver-pack-turbo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://www.prymcare.com/assets/products/liver-pack-turbo.svg</image:loc>
+      <image:title>Liver Detox Pack (Turbo)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.prymcare.com/product/immune-pack-starter.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://www.prymcare.com/assets/products/immune-pack-starter.svg</image:loc>
+      <image:title>Infec Relief Pack (Starter)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.prymcare.com/product/immune-pack-booster.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://www.prymcare.com/assets/products/immune-pack-booster.svg</image:loc>
+      <image:title>Infec Relief Pack (Booster)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.prymcare.com/product/immune-pack-turbo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://www.prymcare.com/assets/products/immune-pack-turbo.svg</image:loc>
+      <image:title>Infec Relief Pack (Turbo)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.prymcare.com/product/prostawell-pack.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://www.prymcare.com/assets/products/prostawell-pack.svg</image:loc>
+      <image:title>ProstaWell Pack</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.prymcare.com/product/mens-wellness-pack.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://www.prymcare.com/assets/products/mens-wellness-pack.svg</image:loc>
+      <image:title>Men's Wellness Pack</image:title>
     </image:image>
   </url>
   <url>
