@@ -30,7 +30,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all';this.onload=null;">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap"></noscript>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.prymcare.com/"},{"@type":"ListItem","position":2,"name":"Shop","item":"https://www.prymcare.com/shop.html"},{"@type":"ListItem","position":3,"name":"Skin Care","item":"https://www.prymcare.com/shop/skin-care.html"}]}
 </script>
@@ -63,7 +65,168 @@
   .filter-btn { flex: 0 0 auto; white-space: nowrap; }
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ItemList","name":"PrymCare Health \u2013 Skin Care","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Aloe Propolis Cr\u00e9me","description":"Bee propolis and aloe vera for a real moisture barrier. Deep relief for rough, dry skin.","category":"Skin Care","image":"https://www.prymcare.com/assets/products/forever-aloe-propolis-creme.svg","url":"https://www.prymcare.com/product/aloe-propolis-creme.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"360.99","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/aloe-propolis-creme.html"}}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Aloe Vera Gelly","description":"Cooling, fast-absorbing aloe gel for sunburn, dry patches, and everyday skin comfort.","category":"Skin Care","image":"https://www.prymcare.com/assets/products/forever-aloe-vera-gelly.svg","url":"https://www.prymcare.com/product/aloe-vera-gelly.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"268.33","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/aloe-vera-gelly.html"}}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Aloe Moisturizing Lotion","description":"Collagen, elastin, and jojoba oil for supple, hydrated skin without the greasy feel.","category":"Skin Care","image":"https://www.prymcare.com/assets/products/forever-aloe-moisturizing-lotion.svg","url":"https://www.prymcare.com/product/aloe-moisturizing-lotion.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"268.33","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/aloe-moisturizing-lotion.html"}}},{"@type":"ListItem","position":4,"item":{"@type":"Product","name":"Forever Avocado Face &amp; Body Soap","description":"Avocado-rich lather that cleanses without stripping skin. Gentle enough for daily face and body use.","category":"Skin Care","image":"https://www.prymcare.com/assets/products/forever-avocado-soap.svg","url":"https://www.prymcare.com/product/avocado-soap.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"125.02","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/avocado-soap.html"}}},{"@type":"ListItem","position":5,"item":{"@type":"Product","name":"Aloe Body Lotion","description":"Lightweight, fast-absorbing hydration for everyday use \u2014 face, hands, and body.","category":"Skin Care","image":"https://www.prymcare.com/assets/products/forever-aloe-body-lotion.svg","url":"https://www.prymcare.com/product/aloe-body-lotion.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"420.66","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/aloe-body-lotion.html"}}},{"@type":"ListItem","position":6,"item":{"@type":"Product","name":"Renewing Skin Cr\u00e9me","description":"An advanced anti-ageing cr\u00e8me built to renew and firm skin over time.","category":"Skin Care","image":"https://www.prymcare.com/assets/products/forever-renewing-skin-creme.svg","url":"https://www.prymcare.com/product/renewing-skin-creme.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"600.94","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/renewing-skin-creme.html"}}}]}
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "PrymCare Health Skin Care Products",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Aloe Propolis Cr\u00e9me",
+        "url": "https://www.prymcare.com/product/aloe-propolis-creme.html",
+        "offers": {
+          "@type": "Offer",
+          "price": "360.99",
+          "priceCurrency": "GHS",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "94"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Aloe Vera Gelly",
+        "url": "https://www.prymcare.com/product/aloe-vera-gelly.html",
+        "offers": {
+          "@type": "Offer",
+          "price": "268.33",
+          "priceCurrency": "GHS",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "112"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "Aloe Moisturizing Lotion",
+        "url": "https://www.prymcare.com/product/aloe-moisturizing-lotion.html",
+        "offers": {
+          "@type": "Offer",
+          "price": "268.33",
+          "priceCurrency": "GHS",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "78"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Product",
+        "name": "Forever Avocado Face &amp; Body Soap",
+        "url": "https://www.prymcare.com/product/avocado-soap.html",
+        "offers": {
+          "@type": "Offer",
+          "price": "125.02",
+          "priceCurrency": "GHS",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "142"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Product",
+        "name": "Aloe Body Lotion",
+        "url": "https://www.prymcare.com/product/aloe-body-lotion.html",
+        "offers": {
+          "@type": "Offer",
+          "price": "420.66",
+          "priceCurrency": "GHS",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "59"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    }
+  ]
+}
 </script>
 </head>
 <body>
@@ -284,30 +447,6 @@
           </div>
         </div>
       </div>
-<div class="prod-card reveal" data-id="renewing-skin-creme" data-href="../product/renewing-skin-creme.html" data-cat="skin" data-price="600.94" data-rating="5" data-reviews="33">
-        <div class="prod-media">
-          <span class="prod-tag">Advanced</span>
-          <img src="../assets/products/forever-renewing-skin-creme.svg" alt="Renewing Skin Créme – Skin Care | PrymCare Health" width="400" height="400" loading="lazy">
-        </div>
-        <div class="prod-body">
-          <span class="prod-cat-link" style="pointer-events:none;">Skin Care</span>
-          <h3>Renewing Skin Créme</h3>
-          <div class="prod-brand">by Forever Living Products</div>
-          <div class="prod-stars">★★★★★ <span>(33)</span></div>
-          <p class="prod-desc">An advanced anti-ageing crème built to renew and firm skin over time.</p>
-          <div class="prod-price">₵600.94</div>
-          <div class="prod-actions">
-            <div class="qty-stepper">
-              <button type="button" class="qty-minus" aria-label="Decrease quantity">−</button>
-              <span class="qty-val">1</span>
-              <button type="button" class="qty-plus" aria-label="Increase quantity">+</button>
-            </div>
-            <button type="button" class="add-cart-btn">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
-              Add to Cart
-            </button>
-          </div>
-        </div>
       </div>
       </div>
     </div>
@@ -449,8 +588,8 @@
 
 <div class="toast" id="toast"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span id="toastMsg">Added to cart</span></div>
 
-<script src="../assets/js/products-data.js"></script>
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/products-data.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
 
 </body>
 </html>
