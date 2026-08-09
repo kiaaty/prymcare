@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18377258474"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -935,6 +935,30 @@ footer a:hover{color:#fff;}
 <div class="toast" id="toast"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span id="toastMsg">Order ready</span></div>
 
 <script src="../assets/js/main.js" defer></script>
+<script>
+// Fallback reveal handler — ensures .reveal content shows even if main.js
+// (external, path-relative) fails to load or run in this environment.
+(function(){
+  function revealAll(){
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+    // Safety net: if nothing has revealed shortly after load, just show everything.
+    setTimeout(function(){
+      var stillHidden = document.querySelectorAll('.reveal:not(.in)');
+      if (stillHidden.length) revealAll();
+    }, 1200);
+  } else {
+    revealAll();
+  }
+})();
+</script>
 <script>
 document.addEventListener('DOMContentLoaded', function(){
   function money(n){ return '₵' + n.toFixed(2); }
