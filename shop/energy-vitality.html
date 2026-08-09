@@ -30,7 +30,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all';this.onload=null;">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap"></noscript>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.prymcare.com/"},{"@type":"ListItem","position":2,"name":"Shop","item":"https://www.prymcare.com/shop.html"},{"@type":"ListItem","position":3,"name":"Energy & Vitality","item":"https://www.prymcare.com/shop/energy-vitality.html"}]}
 </script>
@@ -63,7 +65,169 @@
   .filter-btn { flex: 0 0 auto; white-space: nowrap; }
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ItemList","name":"PrymCare Health \u2013 Energy & Vitality","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Forever B12 Plus","description":"Fast-absorbing B12 spray. No tablets, just a quick daily spray under the tongue.","category":"Energy &amp; Vitality","image":"https://www.prymcare.com/assets/products/forever-b12-plus.svg","url":"https://www.prymcare.com/product/b12-plus.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"286.82","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/b12-plus.html"}}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Forever Argi+","description":"Fast-acting L-arginine for circulation and vitality \u2014 mix, drink, go.","category":"Energy &amp; Vitality","image":"https://www.prymcare.com/assets/products/forever-argi+.svg","url":"https://www.prymcare.com/product/argi-sticks.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"1402.15","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/argi-sticks.html"}}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Forever Focus","description":"A daily formula built for mental clarity, not a caffeine crash.","category":"Energy &amp; Vitality","image":"https://www.prymcare.com/assets/products/forever-focus.svg","url":"https://www.prymcare.com/product/forever-focus.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"1545.65","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/forever-focus.html"}}},{"@type":"ListItem","position":4,"item":{"@type":"Product","name":"FAB Energy Drink","description":"A crisp aloe energy drink that fights tiredness without the sugar spike.","category":"Energy &amp; Vitality","image":"https://www.prymcare.com/assets/products/forever-fab-drink.svg","url":"https://www.prymcare.com/product/fab-drink.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"87.84","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/fab-drink.html"}}}]}
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "PrymCare Health \u2013 Energy & Vitality",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Forever B12 Plus",
+        "description": "Fast-absorbing B12 spray. No tablets, just a quick daily spray under the tongue.",
+        "category": "Energy &amp; Vitality",
+        "image": "https://www.prymcare.com/assets/products/forever-b12-plus.svg",
+        "url": "https://www.prymcare.com/product/b12-plus.html",
+        "brand": {
+          "@type": "Brand",
+          "name": "Forever Living Products"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GHS",
+          "price": "286.82",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.prymcare.com/product/b12-plus.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "58"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Forever Argi+",
+        "description": "Fast-acting L-arginine for circulation and vitality \u2014 mix, drink, go.",
+        "category": "Energy &amp; Vitality",
+        "image": "https://www.prymcare.com/assets/products/forever-argi+.svg",
+        "url": "https://www.prymcare.com/product/argi-sticks.html",
+        "brand": {
+          "@type": "Brand",
+          "name": "Forever Living Products"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GHS",
+          "price": "1402.15",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.prymcare.com/product/argi-sticks.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "34"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "Forever Focus",
+        "description": "A daily formula built for mental clarity, not a caffeine crash.",
+        "category": "Energy &amp; Vitality",
+        "image": "https://www.prymcare.com/assets/products/forever-focus.svg",
+        "url": "https://www.prymcare.com/product/forever-focus.html",
+        "brand": {
+          "@type": "Brand",
+          "name": "Forever Living Products"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GHS",
+          "price": "1545.65",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.prymcare.com/product/forever-focus.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4",
+          "reviewCount": "18"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Product",
+        "name": "FAB Energy Drink",
+        "description": "A crisp aloe energy drink that fights tiredness without the sugar spike.",
+        "category": "Energy &amp; Vitality",
+        "image": "https://www.prymcare.com/assets/products/forever-fab-drink.svg",
+        "url": "https://www.prymcare.com/product/fab-drink.html",
+        "brand": {
+          "@type": "Brand",
+          "name": "Forever Living Products"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GHS",
+          "price": "87.84",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.prymcare.com/product/fab-drink.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "201"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    }
+  ]
+}
 </script>
 </head>
 <body>
@@ -399,8 +563,8 @@
 
 <div class="toast" id="toast"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span id="toastMsg">Added to cart</span></div>
 
-<script src="../assets/js/products-data.js"></script>
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/products-data.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
 
 </body>
 </html>
