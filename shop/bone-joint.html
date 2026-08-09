@@ -30,7 +30,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all';this.onload=null;">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap"></noscript>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.prymcare.com/"},{"@type":"ListItem","position":2,"name":"Shop","item":"https://www.prymcare.com/shop.html"},{"@type":"ListItem","position":3,"name":"Bone & Joint Care","item":"https://www.prymcare.com/shop/bone-joint.html"}]}
 </script>
@@ -63,7 +65,208 @@
   .filter-btn { flex: 0 0 auto; white-space: nowrap; }
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ItemList","name":"PrymCare Health \u2013 Bone & Joint Care","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Forever Calcium","description":"Calcium and supporting minerals for long-term bone strength, built for daily use.","category":"Bone &amp; Joint Care","image":"https://www.prymcare.com/assets/products/forever-calcium.svg","url":"https://www.prymcare.com/product/forever-calcium.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"453.45","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/forever-calcium.html"}}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Forever Active HA","description":"Hyaluronic acid capsules for joint comfort and hydration \u2014 support your body already relies on.","category":"Bone &amp; Joint Care","image":"https://www.prymcare.com/assets/products/forever-active-ha.svg","url":"https://www.prymcare.com/product/active-ha.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"629.32","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/active-ha.html"}}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Forever Move","description":"Advanced joint mobility formula for people who push their bodies hard.","category":"Bone &amp; Joint Care","image":"https://www.prymcare.com/assets/products/forever-move.svg","url":"https://www.prymcare.com/product/forever-move.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"1154.81","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/forever-move.html"}}},{"@type":"ListItem","position":4,"item":{"@type":"Product","name":"Aloe Heat Lotion","description":"Warming aloe lotion for post-workout muscles \u2014 comfort where you need it most.","category":"Bone &amp; Joint Care","image":"https://www.prymcare.com/assets/products/forever-aloe-heat-lotion.svg","url":"https://www.prymcare.com/product/aloe-heat-lotion.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"268.33","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/aloe-heat-lotion.html"}}},{"@type":"ListItem","position":5,"item":{"@type":"Product","name":"Forever Freedom","description":"Glucosamine and aloe vera in a daily drink. Joint mobility support, without the big tablets.","category":"Bone &amp; Joint Care","image":"https://www.prymcare.com/assets/products/forever-freedom.svg","url":"https://www.prymcare.com/product/forever-freedom.html","brand":{"@type":"Brand","name":"Forever Living Products"},"offers":{"@type":"Offer","priceCurrency":"GHS","price":"675.74","availability":"https://schema.org/InStock","url":"https://www.prymcare.com/product/forever-freedom.html"}}}]}
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "PrymCare Health \u2013 Bone & Joint Care",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Forever Calcium",
+        "description": "Calcium and supporting minerals for long-term bone strength, built for daily use.",
+        "category": "Bone &amp; Joint Care",
+        "image": "https://www.prymcare.com/assets/products/forever-calcium.svg",
+        "url": "https://www.prymcare.com/product/forever-calcium.html",
+        "brand": {
+          "@type": "Brand",
+          "name": "Forever Living Products"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GHS",
+          "price": "453.45",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.prymcare.com/product/forever-calcium.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "49"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Forever Active HA",
+        "description": "Hyaluronic acid capsules for joint comfort and hydration \u2014 support your body already relies on.",
+        "category": "Bone &amp; Joint Care",
+        "image": "https://www.prymcare.com/assets/products/forever-active-ha.svg",
+        "url": "https://www.prymcare.com/product/active-ha.html",
+        "brand": {
+          "@type": "Brand",
+          "name": "Forever Living Products"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GHS",
+          "price": "629.32",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.prymcare.com/product/active-ha.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4",
+          "reviewCount": "22"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "Forever Move",
+        "description": "Advanced joint mobility formula for people who push their bodies hard.",
+        "category": "Bone &amp; Joint Care",
+        "image": "https://www.prymcare.com/assets/products/forever-move.svg",
+        "url": "https://www.prymcare.com/product/forever-move.html",
+        "brand": {
+          "@type": "Brand",
+          "name": "Forever Living Products"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GHS",
+          "price": "1154.81",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.prymcare.com/product/forever-move.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "31"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Product",
+        "name": "Aloe Heat Lotion",
+        "description": "Warming aloe lotion for post-workout muscles \u2014 comfort where you need it most.",
+        "category": "Bone &amp; Joint Care",
+        "image": "https://www.prymcare.com/assets/products/forever-aloe-heat-lotion.svg",
+        "url": "https://www.prymcare.com/product/aloe-heat-lotion.html",
+        "brand": {
+          "@type": "Brand",
+          "name": "Forever Living Products"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GHS",
+          "price": "268.33",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.prymcare.com/product/aloe-heat-lotion.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "71"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Product",
+        "name": "Forever Freedom",
+        "description": "Glucosamine and aloe vera in a daily drink. Joint mobility support, without the big tablets.",
+        "category": "Bone &amp; Joint Care",
+        "image": "https://www.prymcare.com/assets/products/forever-freedom.svg",
+        "url": "https://www.prymcare.com/product/forever-freedom.html",
+        "brand": {
+          "@type": "Brand",
+          "name": "Forever Living Products"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GHS",
+          "price": "675.74",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.prymcare.com/product/forever-freedom.html"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4",
+          "reviewCount": "74"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "PrymCare Health Customers"
+          }
+        }
+      }
+    }
+  ]
+}
 </script>
 </head>
 <body>
@@ -424,8 +627,8 @@
 
 <div class="toast" id="toast"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span id="toastMsg">Added to cart</span></div>
 
-<script src="../assets/js/products-data.js"></script>
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/products-data.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
 
 </body>
 </html>
