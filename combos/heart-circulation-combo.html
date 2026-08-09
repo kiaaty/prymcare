@@ -117,7 +117,7 @@ nav.primary a{text-decoration:none; color:var(--ink-soft); font-weight:600; font
 .breadcrumb span{margin:0 6px; color:var(--line);}
 .combo-hero{padding:44px 0 8px; background:radial-gradient(600px 380px at 90% -20%, rgba(140,198,63,0.2), transparent 60%); text-align:center;}
 .combo-illustration{max-width:280px; margin:28px auto 0;}
-.combo-illustration svg{width:100%; height:auto;}
+.combo-illustration svg,.combo-illustration img{width:100%; height:auto;}
 .combo-hero .system-badge{display:inline-flex; align-items:center; gap:8px; background:rgba(47,143,82,0.1); color:var(--aloe); font-weight:800; font-size:12px; text-transform:uppercase; letter-spacing:0.05em; padding:8px 16px; border-radius:100px; margin-bottom:16px;}
 .combo-hero .system-badge svg{width:15px; height:15px;}
 .combo-hero h1{font-size:clamp(28px,4.4vw,44px); line-height:1.15;}
@@ -140,7 +140,7 @@ nav.primary a{text-decoration:none; color:var(--ink-soft); font-weight:600; font
 .section-icon.honey{background:rgba(232,162,58,0.16); color:var(--honey-dark);}
 .section-icon.navy{background:rgba(27,58,99,0.1); color:var(--navy);}
 .inline-illustration{margin:22px 0 6px; border-radius:20px; background:linear-gradient(160deg,rgba(47,143,82,0.08),rgba(140,198,63,0.08)); padding:20px; display:flex; justify-content:center;}
-.inline-illustration svg{width:100%; max-width:360px; height:auto;}
+.inline-illustration svg,.inline-illustration img{width:100%; max-width:360px; height:auto;}
 .inline-illustration.compact{padding:14px; max-width:260px; margin-left:auto; margin-right:auto;}
 .fact-icon-row{display:flex; flex-wrap:wrap; gap:10px; margin-top:18px;}
 .fact-icon-row span{display:inline-flex; align-items:center; gap:8px; background:var(--linen); border:1px solid var(--line); border-radius:100px; padding:8px 14px 8px 8px; font-size:12.5px; font-weight:700; color:var(--ink-soft);}
@@ -259,6 +259,33 @@ footer a:hover{color:#fff;}
 .toast{position:fixed; bottom:24px; left:50%; transform:translateX(-50%) translateY(20px); background:var(--canopy); color:#fff; padding:14px 24px; border-radius:100px; font-size:13.5px; font-weight:700; z-index:400; opacity:0; pointer-events:none; transition:opacity .3s ease, transform .3s ease; display:flex; align-items:center; gap:10px; max-width:calc(100% - 32px); text-align:center;}
 .toast.show{opacity:1; transform:translateX(-50%) translateY(0);}
 .toast svg{width:18px; height:18px; color:var(--sprout); flex-shrink:0;}
+
+/* ============================================================
+   MOBILE REFINEMENTS — tighten spacing, icon sizes and type on
+   small screens so the new content blocks stay easy to read.
+   ============================================================ */
+@media(max-width:680px){
+  .combo-hero{padding:32px 0 4px;}
+  .combo-illustration{max-width:200px; margin-top:18px;}
+  .article-wrap{padding:32px 0 64px;}
+  .article-body{font-size:15.5px;}
+  .article-body h2{font-size:19px; margin-top:32px; margin-bottom:10px;}
+  .section-head{gap:10px; margin-top:32px;}
+  .section-icon{width:40px; height:40px; border-radius:12px;}
+  .section-icon svg{width:20px; height:20px;}
+  .inline-illustration{padding:14px; margin:16px 0 4px;}
+  .inline-illustration.compact{max-width:200px;}
+  .fact-icon-row{gap:8px;}
+  .fact-icon-row span{font-size:11.5px; padding:6px 12px 6px 6px;}
+  .fact-icon-row span svg{width:18px; height:18px;}
+  .article-body ul,.article-body ol{padding-left:18px;}
+  .disclaimer-note{padding:14px 16px; font-size:12px;}
+}
+@media(max-width:420px){
+  .section-head{flex-wrap:wrap;}
+  .article-body h2{font-size:17.5px;}
+  .prod-grid.compact-three .prod-body h3{font-size:14.5px;}
+}
 </style>
 <script type="application/ld+json">
 {
