@@ -333,13 +333,19 @@ footer a:hover{color:#fff;}
 .wp-pack.featured{border-color:var(--aloe); box-shadow:0 24px 55px -25px rgba(47,143,82,0.45);}
 .wp-pack-badge{position:absolute; top:14px; left:14px; z-index:2; background:var(--aloe); color:#fff; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.04em; padding:6px 14px; border-radius:100px;}
 .wp-pack-media{aspect-ratio:4/3; background:linear-gradient(160deg,rgba(47,143,82,0.08),rgba(140,198,63,0.08)); display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden;}
-.wp-pack-media img{width:100%; height:100%; object-fit:contain; padding:22px;}
+.wp-pack-media img{width:100%; height:100%; object-fit:cover; display:block;}
 .wp-pack-media .wp-media-tag{position:absolute; bottom:12px; left:14px; background:var(--honey); color:var(--canopy-2); font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:0.03em; padding:5px 11px; border-radius:100px;}
 .wp-pack-body{padding:22px 22px 0;}
 .wp-pack-name{font-size:22px;}
 .wp-pack-meta{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px;}
 .wp-pack-meta span{background:var(--linen); color:var(--ink-soft); font-size:11.5px; font-weight:700; padding:5px 11px; border-radius:100px;}
 .wp-pack h4{font-size:12px; text-transform:uppercase; letter-spacing:0.06em; color:var(--aloe); font-weight:800; margin:20px 0 10px;}
+.wp-includes-toggle{margin-top:20px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:4px 0;}
+.wp-includes-toggle summary{cursor:pointer; list-style:none; display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 2px; font-size:12px; text-transform:uppercase; letter-spacing:0.06em; color:var(--aloe); font-weight:800;}
+.wp-includes-toggle summary::-webkit-details-marker{display:none;}
+.wp-includes-toggle summary .toggle-plus{flex-shrink:0; width:20px; height:20px; border-radius:50%; background:rgba(47,143,82,0.12); color:var(--aloe); display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:400;}
+.wp-includes-toggle[open] summary .toggle-plus{transform:rotate(45deg);}
+.wp-includes-toggle .wp-includes{padding-bottom:14px;}
 .wp-pack ul{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:8px;}
 .wp-pack .wp-includes li{display:flex; gap:9px; font-size:14px; color:var(--ink); align-items:flex-start;}
 .wp-pack .wp-includes li svg{width:16px; height:16px; color:var(--aloe); flex-shrink:0; margin-top:3px;}
@@ -828,15 +834,17 @@ table.wp-compare tfoot td{font-weight:800; color:var(--canopy-2); background:var
           <h3 class="wp-pack-name">Booster</h3>
           <div class="wp-pack-meta"><span>60-Day Programme</span><span>6 Products</span></div>
 
-          <h4>Includes</h4>
-          <ul class="wp-includes">
-            <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever Arctic Sea</li>
-            <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever CardioHealth with CoQ10</li>
-            <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever Garlic-Thyme</li>
-            <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever Daily</li>
-            <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever Aloe Blossom Herbal Tea</li>
-            <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever Aloe Vera Gel — 2 bottles</li>
-          </ul>
+          <details class="wp-includes-toggle">
+            <summary>View Included Products (6)<span class="toggle-plus">+</span></summary>
+            <ul class="wp-includes">
+              <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever Arctic Sea</li>
+              <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever CardioHealth with CoQ10</li>
+              <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever Garlic-Thyme</li>
+              <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever Daily</li>
+              <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever Aloe Blossom Herbal Tea</li>
+              <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever Aloe Vera Gel — 2 bottles</li>
+            </ul>
+          </details>
 
           <h4>What This Combination Offers</h4>
           <ul class="wp-offers">
@@ -867,17 +875,19 @@ table.wp-compare tfoot td{font-weight:800; color:var(--canopy-2); background:var
           <h3 class="wp-pack-name">Jumbo</h3>
           <div class="wp-pack-meta"><span>90-Day Programme</span><span>8 Products</span></div>
 
-          <h4>Includes</h4>
-          <ul class="wp-includes">
-            <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever Arctic Sea</li>
-            <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever CardioHealth with CoQ10</li>
-            <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever Garlic-Thyme</li>
-            <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever Daily</li>
-            <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever Active Pro-B</li>
-            <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever ARGI+</li>
-            <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever Aloe Blossom Herbal Tea</li>
-            <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever Aloe Vera Gel — 2 bottles</li>
-          </ul>
+          <details class="wp-includes-toggle">
+            <summary>View Included Products (8)<span class="toggle-plus">+</span></summary>
+            <ul class="wp-includes">
+              <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever Arctic Sea</li>
+              <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever CardioHealth with CoQ10</li>
+              <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever Garlic-Thyme</li>
+              <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever Daily</li>
+              <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever Active Pro-B</li>
+              <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever ARGI+</li>
+              <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever Aloe Blossom Herbal Tea</li>
+              <li><svg viewBox="0 0 24 24"><use href="#icon-check"/></svg>Forever Aloe Vera Gel — 2 bottles</li>
+            </ul>
+          </details>
 
           <h4>What This Combination Offers</h4>
           <ul class="wp-offers">
