@@ -73,6 +73,10 @@
 }
 *,*::before,*::after{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
+#wellness,#packages,#why-prymcare,#delivery,#how-to-order,#contact{scroll-margin-top:76px;}
+@media(min-width:780px){
+  #wellness,#packages,#why-prymcare,#delivery,#how-to-order,#contact{scroll-margin-top:110px;}
+}
 body{margin:0; font-family:var(--ff-body); background:var(--linen); color:var(--ink); line-height:1.6;}
 img{max-width:100%; display:block;}
 a{color:inherit;}
@@ -745,7 +749,7 @@ table.wp-compare tfoot td{font-weight:800; color:var(--canopy-2); background:var
 <main id="main">
 
   <!-- ============ 1. HERO ============ -->
-  <section class="wp-hero">
+  <section class="wp-hero" id="wellness">
     <div class="container">
       <!-- ILLUSTRATION: hero image. Editable file: ../assets/illustrations/hero-heart.svg -->
       <div class="combo-illustration" aria-hidden="true" style="margin-top:0;">
@@ -1024,7 +1028,7 @@ table.wp-compare tfoot td{font-weight:800; color:var(--canopy-2); background:var
   </section>
 
   <!-- ============ 8. WHY PRYMCARE HEALTH ============ -->
-  <section class="wp-section alt">
+  <section class="wp-section alt" id="why-prymcare">
     <div class="container">
       <div class="wp-section-head">
         <span class="eyebrow">Why PrymCare Health</span>
@@ -1052,7 +1056,7 @@ table.wp-compare tfoot td{font-weight:800; color:var(--canopy-2); background:var
   </section>
 
   <!-- ============ 9. DELIVERY & PAYMENT ============ -->
-  <section class="wp-section">
+  <section class="wp-section" id="delivery">
     <div class="container">
       <div class="wp-section-head">
         <span class="eyebrow">Delivery &amp; Payment</span>
@@ -1081,7 +1085,7 @@ table.wp-compare tfoot td{font-weight:800; color:var(--canopy-2); background:var
   </section>
 
   <!-- ============ 10. HOW TO ORDER ============ -->
-  <section class="wp-section alt">
+  <section class="wp-section alt" id="how-to-order">
     <div class="container">
       <div class="wp-section-head">
         <span class="eyebrow">How To Order</span>
@@ -1198,7 +1202,7 @@ table.wp-compare tfoot td{font-weight:800; color:var(--canopy-2); background:var
   </section>
 
   <!-- ============ 16. WHATSAPP CTA ============ -->
-  <section class="wp-section alt">
+  <section class="wp-section alt" id="contact">
     <div class="container">
       <div class="wp-wa-band">
         <h3>Not Sure Which Pack Is Right for You?</h3>
